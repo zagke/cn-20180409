@@ -1,0 +1,364 @@
+$defauli-color: #22a7f0;
+
+@mixin beyond-hidden 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    
+a
+    &:hover,&:visited
+        text-decoration: none;
+
+.headtop
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    .navbar-header
+        padding: 15px 0;
+    .headhottel
+        font-size: 16px;
+        line-height: 50px;
+        color: #f00;
+    .headlink
+        font-size: 16px;
+        .navbar-nav>li>a    
+            line-height: 50px;
+            color: #646464;
+            &:focus,&:hover
+                color: $defauli-color;
+    .navbar-nav>li.active>a
+        background-color: $defauli-color;
+        color: #fff;
+        &:focus,&:hover
+            background-color: $defauli-color;
+            color: #fff;
+
+.protmorlist
+    padding-top: 30px;
+    padding-bottom: 30px;    
+    .protlsmortil
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 30px;
+        padding: 10px 0;
+    .protlsmorbtn
+        height: 30px;
+        line-height: 28px;
+        text-align: center;
+        width: 120px;
+        border: 1px solid #aaa;
+        display: block;
+        margin: 0 auto;
+        color: #aaa;
+        &:hover
+            color: #fff;
+            background-color: $defauli-color;
+            border-color: $defauli-color;
+
+.promrlist
+    background-color: #eeeeee;
+
+.protmore
+    background-color: $defauli-color;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    a
+        color: #fff;
+    .protlstex
+        line-height: 30px;
+    h3
+        margin: 0;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        margin-top: 0px;
+        position: relative;
+        &:after
+            position: absolute;
+            left: 50%;
+            width: 80px;
+            height: 2px;
+            margin-left: -40px;
+            bottom: 0;
+            background-color: #fff;
+            display: block ;
+            content: '';
+
+.advicetion
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    height: 155px;
+    .advicetxe
+        padding: 37px 0 0 50px;
+        line-height: 36px;
+        font-size: 20px;
+        p
+            margin: 0;
+        .adviceant
+            font-size: 26px;
+            line-height: 42px;
+            color: $defauli-color;
+    .advicebtn
+        a
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            background-color: $defauli-color;
+            color: #fff;
+            border-radius: 20px;
+            text-align: center;
+
+.protlshegt
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+.caseshow
+    background: url(../images/caseshowbg.jpg) no-repeat center center / cover; 
+    padding: 50px 0;
+    .caseshotil
+        color: #fff;
+        line-height: 30px;
+        padding-bottom: 24px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        position: relative;
+        &:after
+            position: absolute;
+            left: 50%;
+            width: 94px;
+            height: 2px;
+            margin-left: -47px;
+            bottom: 0;
+            background-color: #fff;
+            display: block ;
+            content: '';
+            
+    .casescene
+        background-color: #fff;
+        .casescenedesc
+            height: 185px;
+            padding: 10px 30px 20px;
+            line-height: 30px;
+            p
+                margin: 0;
+                @include  beyond-hidden;
+            .casescedesctil
+                font-size: 18px;
+                line-height: 46px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #d2d2d2;
+
+.colupadd
+    padding: 20px 0 50px;
+    h3
+        line-height: 50px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+.invesguide
+    font-size: 16px;
+    .invesguidetil
+        font-size: 18px;
+        line-height: 40px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        color: $defauli-color;
+        @include  beyond-hidden;
+    .invesguidetex
+        font-size: 14px;
+        line-height: 23px;
+        color: #323232;
+        margin-bottom: 0px;
+        overflow: hidden;
+    ul>li
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 46px;
+        a
+            color: #525252;
+        &:nth-child(2n+1)
+            background-color: #f1f1f1;
+
+.abttext
+    background-color: #f1f1f1;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+.textdefa
+    color: $defauli-color;
+
+/* 底部 */
+footer 
+    background-color: #0083cb;
+    color: #fff;
+    a
+        color: #fff;
+        &:hover
+            color: #6dbae3;
+    p
+        margin: 0;
+
+.footnav
+    padding: 47px 0 26px;
+    line-height: 28px;
+    .footnavtel
+        height: 168px;
+        line-height: 28px;
+        border-right: 1px solid #6dbae3;
+        .footnavimg
+            margin-bottom: 25px;
+    h5
+        font-size: 16px;
+        line-height: 24px;
+
+.footcopy 
+    border-top: 1px solid #007bbc;
+    text-align: center;
+    padding: 15px 0;
+    p
+        display: inline-block;
+        line-height: 24px;
+        margin: 0 20px;
+
+
+
+@media (max-width: 767px)
+
+    .advicetion
+        height: auto;
+        .advicetxe
+            padding: 15px;
+            line-height: 24px;
+            font-size: 16px;
+            p
+                margin: 0;
+            .adviceant
+                font-size: 20px;
+                line-height: 32px;
+                color: $defauli-color;
+        .advicebtn
+            padding: 5px 25px 25px;
+            width: 100%;
+            a
+                width: 100px;
+                margin: 0 auto;
+
+    .protlshegt
+        img
+            width: 100%;
+
+
+    .promrlist
+        margin-bottom: 20px;
+        padding: 0 0 25px;
+
+    .invesguide        
+        .invesdesc
+            padding-bottom: 15px;
+        li:not(.invesdesc)>a
+            display: block ;
+            @include  beyond-hidden;
+
+
+    .casesceneimg
+        img
+            width: 100%;
+
+    .adviceico
+        display: none;
+
+    .footnav
+        padding: 15px 0;
+        .footnavtel
+            text-align: center;
+            height: auto;
+            .footnavimg
+                margin-bottom: 10px;
+
+
+@media (min-width: 768px)
+
+    .invesguide          
+        .invesguidetex
+            max-height: 138px;
+
+    .advicetion
+        .advicetxe
+            padding: 35px 0 0 20px;
+            line-height: 24px;
+            font-size: 16px;
+            .adviceant
+                font-size: 20px;
+                line-height: 42px;
+                color: $defauli-color;
+        .advicebtn
+            padding: 60px 25px 0 0;
+            a
+                width: 120px;
+
+@media (min-width: 768px) and (max-width:991px)
+    .navbar-nav>li>a
+        padding: 15px 10px;
+    
+    .abtimge
+        img
+            width: 100%;
+
+@media (min-width: 992px)
+
+    .invesguide        
+        .invesdesc
+            height: 173px;            
+        .invesguidetex
+            max-height: 138px;
+    
+    .abttext
+        height: 210px;
+    
+    .advicetion
+        .advicetxe
+            padding: 37px 0 0 50px;
+            line-height: 28px;
+            font-size: 18px;
+            .adviceant
+                font-size: 26px;
+                line-height: 34px;
+                color: $defauli-color;
+        .advicebtn
+            padding: 60px 65px 0 0;
+            a
+                width: 150px;
+
+@media (min-width: 1200px)
+    .headtop
+        .navbar-header
+            margin-right: 85px;
+
+    .protlshegt        
+        height: 455px;
+    
+    .protmore
+        margin-bottom: 0px;
+        .protlstex
+            height: 270px;
+    
+    .invesguide
+        .invesdesc
+            height: 200px;            
+        .invesguidetex
+            max-height: 138px;
+
+    .abttext
+        height: 180px;
+
+    .advicetion
+        .advicetxe
+            width: auto;
+        .advicebtn
+            padding: 60px 65px 0 0;
+            a
+                width: 150px;
