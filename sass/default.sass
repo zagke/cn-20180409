@@ -1,637 +1,1064 @@
-$defauli-color: #22a7f0;
+$defauli-color: #22a7f0
 
-@mixin beyond-hidden 
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+@mixin beyond-hidden
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
-    
 a
-    &:hover,&:visited
-        text-decoration: none;
+    &:hover,&:visited,&:focus
+        text-decoration: none
 
 .headtop
-    margin: 0px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid $defauli-color;
+    margin: 0px
+    background-color: transparent
+    border: none
+    border-bottom: 3px solid $defauli-color
     .navbar-header
-        padding: 19px 0;
+        padding: 19px 0
     .headhottel
-        font-size: 16px;
-        line-height: 58px;
-        color: #f00;
+        font-size: 16px
+        line-height: 58px
+        color: #f00
     .headlink
-        font-size: 16px;
+        font-size: 16px
         .navbar-nav>li>a    
-            line-height: 58px;
-            color: #646464;
+            line-height: 58px
+            color: #646464
             &:focus,&:hover
-                color: $defauli-color;
+                color: $defauli-color
     .navbar-nav>li.active>a
-        background-color: $defauli-color;
-        color: #fff;
+        background-color: $defauli-color
+        color: #fff
         &:focus,&:hover
-            background-color: $defauli-color;
-            color: #fff;
+            background-color: $defauli-color
+            color: #fff
     &.index-nav
-        border-bottom: none;        
+        border-bottom: none        
         .navbar-header
-            padding: 15px 0;
+            padding: 15px 0
         .headhottel
-            line-height: 50px;
+            line-height: 50px
         .headlink
             .navbar-nav>li>a    
-                line-height: 50px;
+                line-height: 50px
                 &:focus,&:hover
-                    color: $defauli-color;
+                    color: $defauli-color
         .navbar-nav>li.active>a
             &:focus,&:hover
-                color: #fff;
+                color: #fff
 
 .smallban
-    height: 214px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 214px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
 
 .breadnav
-    background-color: #f1f1f1;
-    line-height: 35px;
-    margin-bottom: 40px;
+    background-color: #f1f1f1
+    line-height: 35px
+    margin-bottom: 40px
     a
-        color: #333;
-        margin-left: 5px;
-        margin-right: 5px;
+        color: #333
+        margin-left: 5px
+        margin-right: 5px
         &:focus,&:hover
-            color: $defauli-color;
+            color: $defauli-color
 
 .protmorlist
-    padding-top: 30px;
-    padding-bottom: 30px;    
+    padding-top: 30px
+    padding-bottom: 30px    
     .protlsmortil
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 30px;
-        padding: 10px 0;
+        font-size: 18px
+        font-weight: bold
+        line-height: 30px
+        padding: 10px 0
     .protlsmorbtn
-        height: 30px;
-        line-height: 28px;
-        text-align: center;
-        width: 120px;
-        border: 1px solid #aaa;
-        display: block;
-        margin: 0 auto;
-        color: #aaa;
+        height: 30px
+        line-height: 28px
+        text-align: center
+        width: 120px
+        border: 1px solid #aaa
+        display: block
+        margin: 0 auto
+        color: #aaa
         &:hover
-            color: #fff;
-            background-color: $defauli-color;
-            border-color: $defauli-color;
+            color: #fff
+            background-color: $defauli-color
+            border-color: $defauli-color
 
 .promrlist
-    background-color: #eeeeee;
+    background-color: #eeeeee
 
 .protmore
-    background-color: $defauli-color;
-    padding: 20px;
-    color: #fff;
-    margin-bottom: 30px;
+    background-color: $defauli-color
+    padding: 20px
+    color: #fff
+    margin-bottom: 30px
     a
-        color: #fff;
+        color: #fff
     .protlstex
-        line-height: 30px;
+        line-height: 30px
     h3
-        margin: 0;
-        padding-bottom: 20px;
-        margin-bottom: 25px;
-        margin-top: 0px;
-        position: relative;
+        margin: 0
+        padding-bottom: 20px
+        margin-bottom: 25px
+        margin-top: 0px
+        position: relative
         &:after
-            position: absolute;
-            left: 50%;
-            width: 80px;
-            height: 2px;
-            margin-left: -40px;
-            bottom: 0;
-            background-color: #fff;
-            display: block ;
-            content: '';
+            position: absolute
+            left: 50%
+            width: 80px
+            height: 2px
+            margin-left: -40px
+            bottom: 0
+            background-color: #fff
+            display: block 
+            content: ''
 
 .advicetion
-    margin-top: 30px;
-    background-color: #f7f7f7;
-    height: 155px;
+    margin-top: 30px
+    background-color: #f7f7f7
+    height: 155px
     .advicetxe
-        padding: 37px 0 0 50px;
-        line-height: 36px;
-        font-size: 20px;
+        padding: 37px 0 0 50px
+        line-height: 36px
+        font-size: 20px
         p
-            margin: 0;
+            margin: 0
         .adviceant
-            font-size: 26px;
-            line-height: 42px;
-            color: $defauli-color;
+            font-size: 26px
+            line-height: 42px
+            color: $defauli-color
     .advicebtn
         a
-            display: block;
-            height: 40px;
-            line-height: 40px;
-            background-color: $defauli-color;
-            color: #fff;
-            border-radius: 20px;
-            text-align: center;
+            display: block
+            height: 40px
+            line-height: 40px
+            background-color: $defauli-color
+            color: #fff
+            border-radius: 20px
+            text-align: center
 
 .protlshegt
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 30px
+    padding-bottom: 20px
     
 .caseshow
-    background: url(../images/caseshowbg.jpg) no-repeat center center / cover; 
-    padding: 50px 0;
+    background: url(../images/caseshowbg.jpg) no-repeat center center / cover 
+    padding: 50px 0
     .caseshotil
-        color: #fff;
-        line-height: 30px;
-        padding-bottom: 24px;
-        margin-bottom: 30px;
-        margin-top: 0px;
-        position: relative;
+        color: #fff
+        line-height: 30px
+        padding-bottom: 24px
+        margin-bottom: 30px
+        margin-top: 0px
+        position: relative
         &:after
-            position: absolute;
-            left: 50%;
-            width: 94px;
-            height: 2px;
-            margin-left: -47px;
-            bottom: 0;
-            background-color: #fff;
-            display: block ;
-            content: '';
+            position: absolute
+            left: 50%
+            width: 94px
+            height: 2px
+            margin-left: -47px
+            bottom: 0
+            background-color: #fff
+            display: block 
+            content: ''
             
     .casescene
-        background-color: #fff;
+        background-color: #fff
         .casescenedesc
-            height: 185px;
-            padding: 10px 30px 20px;
-            line-height: 30px;
+            height: 185px
+            padding: 10px 30px 20px
+            line-height: 30px
             p
-                margin: 0;
-                @include  beyond-hidden;
+                margin: 0
+                @include  beyond-hidden
             .casescedesctil
-                font-size: 18px;
-                line-height: 46px;
-                margin-bottom: 10px;
-                border-bottom: 1px solid #d2d2d2;
+                font-size: 18px
+                line-height: 46px
+                margin-bottom: 10px
+                border-bottom: 1px solid #d2d2d2
 
 .colupadd
-    padding: 20px 0 20px;
+    padding: 20px 0 20px
     h3
-        line-height: 50px;
-        margin-top: 0px;
-        margin-bottom: 10px;
+        line-height: 50px
+        margin-top: 0px
+        margin-bottom: 10px
 
 .invesguide
-    font-size: 16px;
+    font-size: 16px
     .invesguidetil
-        font-size: 18px;
-        line-height: 40px;
-        padding-top: 10px;
-        margin-bottom: 0px;
-        color: $defauli-color;
-        @include  beyond-hidden;
+        font-size: 18px
+        line-height: 40px
+        padding-top: 10px
+        margin-bottom: 0px
+        color: $defauli-color
+        @include  beyond-hidden
     .invesguidetex
-        font-size: 14px;
-        line-height: 23px;
-        color: #323232;
-        margin-bottom: 0px;
-        overflow: hidden;
+        font-size: 14px
+        line-height: 23px
+        color: #323232
+        margin-bottom: 0px
+        overflow: hidden
     ul>li
-        padding-left: 20px;
-        padding-right: 20px;
-        line-height: 46px;
+        padding-left: 20px
+        padding-right: 20px
+        line-height: 46px
         a
-            color: #525252;
+            color: #525252
         &:nth-child(2n+1)
-            background-color: #f1f1f1;
+            background-color: #f1f1f1
 
 .abttext
-    background-color: #f1f1f1;
-    line-height: 30px;
-    padding-top: 10px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    padding-left: 25px;
+    background-color: #f1f1f1
+    line-height: 30px
+    padding-top: 10px
+    padding-right: 25px
+    padding-bottom: 10px
+    padding-left: 25px
 
 .textdefa
-    color: $defauli-color;
+    color: $defauli-color
 
 /* 底部 */
 footer 
-    background-color: #0083cb;
-    margin-top: 30px;
-    color: #fff;
+    background-color: #0083cb
+    margin-top: 30px
+    color: #fff
     a
-        color: #fff;
+        color: #fff
         &:hover
-            color: #6dbae3;
+            color: #6dbae3
     p
-        margin: 0;
-
+        margin: 0
 .footnav
-    padding: 47px 0 26px;
-    line-height: 28px;
+    padding: 47px 0 26px
+    line-height: 28px
     .footnavtel
-        height: 168px;
-        line-height: 28px;
-        border-right: 1px solid #6dbae3;
+        height: 168px
+        line-height: 28px
+        border-right: 1px solid #6dbae3
         .footnavimg
-            margin-bottom: 25px;
+            margin-bottom: 25px
     h5
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px
+        line-height: 24px
 
 .footcopy 
-    border-top: 1px solid #007bbc;
-    text-align: center;
-    padding: 15px 0;
+    border-top: 1px solid #007bbc
+    text-align: center
+    padding: 15px 0
     p
-        display: inline-block;
-        line-height: 24px;
-        margin: 0 20px;
+        display: inline-block
+        line-height: 24px
+        margin: 0 20px
 /* 关于我们 */
 .abtlabtil
-    font-size: 30px;
-    line-height: 36px;
-    color: $defauli-color;
-    text-align: center;
-    padding-bottom: 10px;
-    font-weight: bold;
+    font-size: 30px
+    line-height: 36px
+    color: $defauli-color
+    text-align: center
+    padding-bottom: 10px
+    font-weight: bold
     .abtlabtilsml
-        font-size: 24px;
-        font-weight: normal;
+        font-size: 24px
+        font-weight: normal
 
 .abtlabetil
-    font-size: 24px;
-    font-weight: bold;
-    color: $defauli-color;
-    line-height: 48px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 24px
+    font-weight: bold
+    color: $defauli-color
+    line-height: 48px
+    text-align: center
+    margin-bottom: 20px
 
 .abtstrengimg
     &>div
-        padding: 1px;
+        padding: 1px
 
 .abtinfo
     p
-        line-height: 30px;
-        margin: 0px;
-        margin-top: 20px;
+        line-height: 30px
+        margin: 0px
+        margin-top: 20px
 
 .abtstrength
-    padding: 15px 0;
+    padding: 15px 0
     .abtstrengtex
-        line-height: 30px;
+        line-height: 30px
         p
-            margin-top: 20px;
-            margin-bottom: 0px;
+            margin-top: 20px
+            margin-bottom: 0px
 
 .abthistory
-    padding: 15px 0;
+    padding: 15px 0
     .nav-tabs
-        border: none;
-        margin-bottom: 25px;
-        background-color: #dcdcdc;
+        border: none
+        margin-bottom: 25px
+        background-color: #dcdcdc
         li
-            padding: 0;
-            text-align: center;
+            padding: 0
+            text-align: center
             a
-                border: none;  
-                background-color: #f1f1f1;
-                color: #7b7b7b;
-                border-radius: 0;     
-                margin-right: 1px;
+                border: none  
+                background-color: #f1f1f1
+                color: #7b7b7b
+                border-radius: 0     
+                margin-right: 1px
                 &:focus,&:hover
-                    border: none;  
-                    color: $defauli-color;
+                    border: none  
+                    color: $defauli-color
             &.abthisinit a,&.abthisinit a:focus,&.abthisinit a:hover
-                margin-right: 0px;
-                background-color: #b5b5b5;
-                color: #000;       
+                margin-right: 0px
+                background-color: #b5b5b5
+                color: #000       
             &.active a,&.active a:focus,&.active a:hover
-                background-color: $defauli-color;
-                color: #fff;   
+                background-color: $defauli-color
+                color: #fff   
     .tab-content
-        line-height: 30px;
+        line-height: 30px
         p
-            margin-bottom: 10px;
+            margin-bottom: 10px
 
 /* 投资指导 */
 
 .inveshot
-    text-align: center;
+    text-align: center
     &>div
-        display: inline-block;
-        color: $defauli-color;
-        padding: 0 22px;
-        position: relative;
-        border-left: 6px solid  $defauli-color;
-        border-right: 6px solid  $defauli-color;
+        display: inline-block
+        color: $defauli-color
+        padding: 0 22px
+        position: relative
+        border-left: 6px solid  $defauli-color
+        border-right: 6px solid  $defauli-color
         .inveshotch
-            font-size: 30px;
-            line-height: 35px;
-            font-weight: bold;
-            margin-bottom: 0;
+            font-size: 30px
+            line-height: 35px
+            font-weight: bold
+            margin-bottom: 0
         .inveshoten
-            font-size: 18px;
-            line-height: 25px;
-            margin-bottom: 0;        
+            font-size: 18px
+            line-height: 25px
+            margin-bottom: 0        
         &:before,&:after
-            position: absolute;
-            width: 6px;
-            height: 100%;
-            left: 0;
-            top: 0;
-            border-top: 6px solid  $defauli-color;
-            border-bottom: 6px solid  $defauli-color;
-            display: block ;
-            content: '';
+            position: absolute
+            width: 6px
+            height: 100%
+            left: 0
+            top: 0
+            border-top: 6px solid  $defauli-color
+            border-bottom: 6px solid  $defauli-color
+            display: block 
+            content: ''
         &:after
-            right: 0;
-            left: auto;
+            right: 0
+            left: auto
 
 .investsectiontil
-    font-size: 24px;
-    color: $defauli-color;
-    line-height: 24px;
-    margin-bottom: 15px;
-    padding: 15px 0;
+    font-size: 24px
+    color: $defauli-color
+    line-height: 24px
+    margin-bottom: 15px
+    padding: 15px 0
     span
-        float: right;
-        font-size: 14px;
+        float: right
+        font-size: 14px
         a
-            color: #333;
+            color: #333
             &:hover
-                color: $defauli-color;
+                color: $defauli-color
 
 .investsection01,.investsection02,.investsection03
-    padding: 15px 0;
+    padding: 15px 0
     ul
-        margin-bottom: 0;
+        margin-bottom: 0
 
 @mixin invest-list-hover
-    background-color: $defauli-color;
-    color: #fff;
+    background-color: $defauli-color
+    color: #fff
 
 .investmarketfat
-    padding: 0 15px 30px;
+    padding: 0 15px 30px
     a
-        display: block;
-        background-color: #f1f1f1;
-        color: #525252;
-        padding-right: 30px;
+        display: block
+        background-color: #f1f1f1
+        color: #525252
+        padding-right: 30px
         p
-            margin-bottom: 0;
-            color: #646464;
+            margin-bottom: 0
+            color: #646464
         .invmkfaimg
-            margin: 0 30px 0 0;
+            margin: 0 30px 0 0
         .invmkfatil
-            font-size: 16px;
-            line-height: 46px;
-            padding-top: 15px;
-            color: $defauli-color;
-            @include  beyond-hidden;
+            font-size: 16px
+            line-height: 46px
+            padding-top: 15px
+            color: $defauli-color
+            @include  beyond-hidden
         .invmkfatme
-            line-height: 26px;
-            margin-bottom: 10px;
+            line-height: 26px
+            margin-bottom: 10px
         .invmkfatex
-            line-height: 30px;
-            height: 60px;
-            overflow: hidden;
+            line-height: 30px
+            height: 60px
+            overflow: hidden
     a:hover,a:focus
-        @include invest-list-hover;        
+        @include invest-list-hover        
         p
-            color: #fff;
+            color: #fff
 
 .investlstion01
     li
         a
-            display: block;
-            font-size: 16px;
-            line-height: 45px;
-            padding: 0 20px;
-            color: #525252;
-            @include  beyond-hidden;
+            display: block
+            font-size: 16px
+            line-height: 45px
+            padding: 0 20px
+            color: #525252
+            @include  beyond-hidden
         a:hover,a:focus
-            @include invest-list-hover;
+            @include invest-list-hover
 .investlstion02
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin-top: -15px
+    margin-bottom: -15px
     li
-        padding: 15px;
+        padding: 15px
         a
-            display: block;
-            height: 210px;
-            padding: 20px;
-            color: #525252;
-            background-color: #f1f1f1;
-            line-height: 26px;
+            display: block
+            height: 210px
+            padding: 20px
+            color: #525252
+            background-color: #f1f1f1
+            line-height: 26px
             .inveslstil
-                color: $defauli-color;
-                font-size: 16px;
-                line-height: 38px;
-                margin-bottom: 12px;
-                @include  beyond-hidden;
+                color: $defauli-color
+                font-size: 16px
+                line-height: 38px
+                margin-bottom: 12px
+                @include  beyond-hidden
             .inveslstex
-                height: 130px;
-                overflow: hidden;
+                height: 130px
+                overflow: hidden
         a:hover,a:focus
-            @include invest-list-hover;
+            @include invest-list-hover
             .inveslstil
-                color: #fff;
+                color: #fff
 .investlstion03
     li
         a
-            display: block;
-            padding: 0 20px;
-            color: #525252;
-            line-height: 45px;            
-            @include  beyond-hidden;
+            display: block
+            padding: 0 20px
+            color: #525252
+            line-height: 45px            
+            @include  beyond-hidden
             span
-                float: right;
-                padding-left: 10px;
+                float: right
+                padding-left: 10px
         &:nth-child(2n+1) a
-            background-color: #f1f1f1;
+            background-color: #f1f1f1
         a:hover,a:focus
-            @include invest-list-hover;
+            @include invest-list-hover
+
+.invdetahead
+    text-align: center
+    border-bottom: 1px dotted #dcdcdc
+    margin-bottom: 15px
+    p
+        margin-bottom: 0
+    .invdetatil
+        font-size: 24px
+        line-height: 24px
+        color: $defauli-color
+    .invdetatam
+        font-size: 14px
+        line-height: 22px
+        padding: 15px 0
+        color: #646464
+
+.testinv
+    line-height: 40px
+    img
+        margin: 0 auto
+
+.invdetaflip
+    border-top: 1px solid #dcdcdc
+    margin: 25px 0 0
+    padding: 10px 0
+    line-height: 32px
+    p
+        margin-bottom: 0
+    a
+        color: #646464
+        &:hover,&:focus
+            color: $defauli-color
+
+.invedetasidetil
+    font-size: 18px
+    line-height: 32px
+    color: $defauli-color
+    margin-bottom: 24px
+
+.invdetasidelst
+    p
+        margin-bottom: 0px
+    li
+        margin-bottom: 32px
+        a
+            display: block
+            background-color: #f7f7f7
+            .invdetadilsttil
+                color: $defauli-color
+                font-size: 16px
+                line-height: 40px
+                padding-left: 15px
+                padding-right: 15px
+            .invdetadilstsiz
+                font-size: 14px
+                line-height: 22px
+                padding-left: 15px
+                padding-right: 15px
+                color: #646464
+            .invdetadilstnum
+                line-height: 22px
+                padding:  0 15px 20px 15px   
+                color: #646464
+            &:hover,&:focus
+                @include invest-list-hover                
+                .invdetadilsttil,.invdetadilstsiz,.invdetadilstnum
+                    color: #fff
+
+/* 产品列表 */
+
+.prostlisttab
+    ul
+        margin-bottom: 0
+    li
+        padding: 0
+        text-align: center
+        line-height: 48px
+        font-size: 18px
+        a
+            display: block
+            color: $defauli-color
+            background-color: #f1f1f1
+            &:hover,&:focus
+                color: #fff
+                background-color: $defauli-color
+        &.active a,&.active a:hover
+                color: #fff
+                background-color: $defauli-color
+
+
+.prostlist
+    li
+        margin-top: 30px
+        a
+            display: block
+            background-color: #f7f7f7
+            p
+                margin-bottom: 0
+                span
+                    margin-right: 3px
+            .prostlisttil
+                color: #323232
+                font-size: 16px
+                line-height: 38px
+                padding-left: 10px
+                padding-right: 10px
+            .prostlistsiz
+                font-size: 14px
+                line-height: 30px
+                padding-left: 10px
+                padding-right: 10px
+                color: #646464
+            .prostlistnum
+                line-height: 30px
+                padding:  0 10px 10px 10px   
+                color: #646464
+            &:hover,&:focus       
+                .prostlisttil
+                    color: $defauli-color
+                .prostlistsiz span,.prostlistnum span
+                    color: $defauli-color
+
+.casemoer
+    background-color: #f7f7f7
+    margin-bottom: -30px
+    padding-bottom: 30px
+    li
+        a
+            font-size: 16px
+            color: #323232
+            text-align: center
+            &:hover,&:focus
+                color: $defauli-color
+
+.casemrestile
+    text-align: center
+    line-height: 34px
+    height: 94px
+    position: relative    
+    padding-top: 30px
+    padding-bottom: 30px
+    span
+        background: #f7f7f7
+        padding: 0 20px
+        display: inline-block
+        position: relative
+        font-size: 24px
+        color: $defauli-color
+    &:before
+        position: absolute
+        width: 100%
+        height: 1px
+        left: 0
+        top: 50%
+        background-color: $defauli-color
+        display: block 
+        content: ''
+
+.contfrom
+    .contfromtil
+        font-size: 24px
+        line-height: 34px
+        padding: 15px 0
+        color: $defauli-color
+        border-bottom: 2px solid $defauli-color
+        margin-bottom: 30px
+    ul
+        margin-left: 0
+    li
+        padding: 0 15px 0 65px
+        position: relative
+        margin-bottom: 25px
+        .contformico
+            position: absolute
+            width: 50px
+            height: 45px
+            left: 15px
+            top: 0
+            background-color: $defauli-color
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            &.contformico01
+                background-image: url('../images/contformico01.png')
+            &.contformico02
+                background-image: url('../images/contformico02.png')
+            &.contformico03
+                background-image: url('../images/contformico03.png')
+            &.contformico04
+                background-image: url('../images/contformico04.png')
+            &.contformico05
+                background-image: url('../images/contformico05.png')
+            &.contformico06
+                background-image: url('../images/contformico06.png')
+            &.contformico07
+                background-image: url('../images/contformico07.png')
+        input
+            border: 1px solid #dcdcdc
+            height: 45px
+            line-height: 23px
+            padding: 10px 15px
+            border-radius: 0
+        select
+            border: 1px solid #dcdcdc
+            height: 45px
+            line-height: 43px
+            padding: 0 15px
+            border-radius: 0
+            appearance: none
+            -moz-appearance: none
+            -webkit-appearance: none
+            background: url("../images/contformseltbg.png") no-repeat scroll right center transparent
+            padding-right: 30px
+            option
+                line-height: 40px
+                height: 40px
+        textarea
+            border: 1px solid #dcdcdc
+            height: 160px
+            line-height: 40px
+            padding: 0 15px
+            border-radius: 0
+        .contformbtn
+            background-color: $defauli-color
+            color: #fff
+            width: 250px
+            line-height: 40px
+            text-align: center
+            display: inline-block
+            float: right
+
+
+.protsect01,.protsect02,.protsect03
+    p
+        margin-bottom: 0        
+    .protinfotil
+        height: 45px
+        line-height: 45px
+        font-size: 20px
+        text-align: center
+        background-color: $defauli-color
+        color: #fff
+        margin-bottom: 30px        
+    .protinfcom
+        color: $defauli-color
+
+.protinfopt
+    margin-bottom: 20px
+
+.protsect01tx
+    p
+        line-height: 26px
+        margin: 6px 0
+
+.proinfoconsbtn
+    display: block
+    height: 40px
+    line-height: 40px
+    font-size: 18px
+    text-align: center
+    background-color: $defauli-color
+    color: #fff
+    &:hover,&:focus
+        color: #fff
+
+.proinfoconstel
+    text-align: center
+    color:  $defauli-color
+    font-size: 26px
+    line-height: 40px
+    font-weight: bold
+    .prottelicom
+        display: inline-block
+        margin-right: 10px
+        width: 50px
+        height: 40px
+        vertical-align: top
+        background: transparent url("../images/prottelicom.png") no-repeat scroll center center / contain 
+
+.prostconttil
+    line-height: 20px
+    font-size: 18px
+    color: $defauli-color
+    padding: 25px 0
+    padding-left: 30px
+    background: transparent url("../images/prostconttil.png") no-repeat scroll left center 
+
+.protsect02    
+    line-height: 30px
+    color: #646464
+    .pro-advantage
+        p
+            padding:  5px 0
+        .prostconttil
+            @extend .prostconttil
+    .pro-parameters
+        p
+            line-height: 36px
+        .prostconttil
+            @extend .prostconttil
+
+
+.protsect03
+    ul
+        margin-left: 0
+    li
+        padding: 0 15px
+        .pro-related-til
+            line-height: 26px
+            font-size: 16px
+            color: #646464
+            padding: 5px 0
+        a:hover .pro-related-til
+            color: $defauli-color
+
+.pro-principle
+    background-color: #f6f6f6
+    padding-bottom: 20px
+
+.case-typi-til
+    font-size: 24px
+    line-height: 24px
+    color: $defauli-color
+
+.case-typi-listimg
+    margin-bottom: 0
+    li
+        margin-top: 20px
+        a
+            p
+                margin-bottom: 0
+            .case-typi-list-til
+                color: #323232
+                font-size: 16px
+                line-height: 24px
+                padding: 7px 0
+            &:hover .case-typi-list-til,&:focus .case-typi-list-til
+                color: $defauli-color
+
+.case-typi-list
+    li
+        padding: 7px 0
+        font-size: 16px
+        line-height: 24px
+        a
+            color: #323232
+            &:hover,&:focus
+                color: $defauli-color
+
+.case-table
+    margin-bottom: 30px
+    ul
+        margin-left: 0
+        margin-bottom: 0
+        li
+            padding: 0 15px
+            a
+                display: block
+                border: 1px solid $defauli-color
+                height: 56px
+                font-size: 20px
+                line-height: 54px
+                text-align: center
+                color: $defauli-color
+                &:hover,&:focus,li.active &
+                    color: #fff
+                    background-color: $defauli-color
+            &.active a
+                    color: #fff
+                    background-color: $defauli-color
+
+.case-list
+    ul
+        margin-left: 0
+        li
+            padding: 0 15px
+            margin-bottom: 30px
+            a
+                display: block
+                background-color: #f7f7f7
+                p
+                    margin-bottom: 0
+                &:after
+                    display: table
+                    content: " "
+                    clear: both
+                .case-list-img
+                    float: left
+                    width: 270px
+                    height: 180px
+                    margin-bottom: 0
+                    margin-right: 30px
+                .case-list-til
+                    font-size: 16px
+                    line-height: 24px
+                    padding: 30px 0 10px
+                    color: #323232
+                    span
+                        display: inline-block
+                        width: 18px
+                        height: 18px
+                        margin: 3px 0 0 10px
+                        vertical-align: top
+                        border-radius: 2px
+                        background: #909090 url("../images/case-list-til-ico.png") no-repeat scroll center center 
+                        background-color: #909090
+                .case-list-tex
+                    line-height: 30px
+                    color: #646464
+                &:hover,&:focus
+                    .case-list-til
+                        color: $defauli-color
+                        span
+                            background-color: $defauli-color
+                    .case-list-tex span
+                        color: $defauli-color
+
+.case-page
+    text-align: center
+    li
+        a
+            margin: 0 10px
 
 @media (max-width: 767px)
 
     .advicetion
-        height: auto;
+        height: auto
         .advicetxe
-            padding: 15px;
-            line-height: 24px;
-            font-size: 16px;
+            padding: 15px
+            line-height: 24px
+            font-size: 16px
             p
-                margin: 0;
+                margin: 0
             .adviceant
-                font-size: 20px;
-                line-height: 32px;
-                color: $defauli-color;
+                font-size: 20px
+                line-height: 32px
+                color: $defauli-color
         .advicebtn
-            padding: 5px 25px 25px;
-            width: 100%;
+            padding: 5px 25px 25px
+            width: 100%
             a
-                width: 100px;
-                margin: 0 auto;
+                width: 100px
+                margin: 0 auto
 
     .protlshegt
         img
-            width: 100%;
+            width: 100%
 
 
     .promrlist
-        margin-bottom: 20px;
-        padding: 0 0 25px;
+        margin-bottom: 20px
+        padding: 0 0 25px
 
     .invesguide        
         .invesdesc
-            padding-bottom: 15px;
+            padding-bottom: 15px
         li:not(.invesdesc)>a
-            display: block ;
-            @include  beyond-hidden;
+            display: block 
+            @include  beyond-hidden
 
 
     .casesceneimg
         img
-            width: 100%;
+            width: 100%
 
     .adviceico
-        display: none;
+        display: none
 
     .footnav
-        padding: 15px 0;
+        padding: 15px 0
         .footnavtel
-            text-align: center;
-            height: auto;
+            text-align: center
+            height: auto
             .footnavimg
-                margin-bottom: 10px;
+                margin-bottom: 10px
 
     .investmarketfat 
         a
-            padding-right: 0;
+            padding-right: 0
             .invmkfaimg 
-                width: 100%;
-                float: none!important;
-                margin: 0 0 0;    
+                width: 100%
+                float: none!important
+                margin: 0 0 0    
                 img
-                    width: 100%;
+                    width: 100%
             .invmkfatil,.invmkfatme,.invmkfatex
-                padding-left: 15px;
-                padding-right: 15px;
+                padding-left: 15px
+                padding-right: 15px
             .invmkfatil
-                padding-top: 10px;
+                padding-top: 10px
             .invmkfatme
-                margin: 0;
+                margin: 0
             .invmkfatex
-                margin-bottom: 15px;
+                margin-bottom: 15px
 
     .investlstion01
         li
             &:nth-child(2n+1) a
-                background-color: #f1f1f1;
+                background-color: #f1f1f1
             a:hover,a:focus
-                @include invest-list-hover;
-
+                @include invest-list-hover
+    .invdetasidelst
+        li
+            a
+                .invdetadilstimg
+                    img
+                        width: 100%
+                    
 
 @media (min-width: 768px)
 
     .invesguide          
         .invesguidetex
-            max-height: 138px;
+            max-height: 138px
 
     .advicetion
         .advicetxe
-            padding: 35px 0 0 20px;
-            line-height: 24px;
-            font-size: 16px;
+            padding: 35px 0 0 20px
+            line-height: 24px
+            font-size: 16px
             .adviceant
-                font-size: 20px;
-                line-height: 42px;
-                color: $defauli-color;
+                font-size: 20px
+                line-height: 42px
+                color: $defauli-color
         .advicebtn
-            padding: 60px 25px 0 0;
+            padding: 60px 25px 0 0
             a
-                width: 120px;
+                width: 120px
 
     
     .investlstion01
         li
             &:nth-child(4n+1) a,&:nth-child(4n+2) a
-                background-color: #f1f1f1;
+                background-color: #f1f1f1
             a:hover,a:focus
-                @include invest-list-hover;
+                @include invest-list-hover
 
 @media (min-width: 768px) and (max-width:991px)
     .navbar-nav>li>a
-        padding: 15px 10px;
+        padding: 15px 10px
     
     .abtimge
         img
-            width: 100%;
+            width: 100%
 
 @media (min-width: 992px)
 
     .invesguide        
         .invesdesc
-            height: 173px;            
+            height: 173px            
         .invesguidetex
-            max-height: 138px;
+            max-height: 138px
     
     .abttext
-        height: 210px;
+        height: 210px
     
     .advicetion
         .advicetxe
-            padding: 37px 0 0 50px;
-            line-height: 28px;
-            font-size: 18px;
+            padding: 37px 0 0 50px
+            line-height: 28px
+            font-size: 18px
             .adviceant
-                font-size: 26px;
-                line-height: 34px;
-                color: $defauli-color;
+                font-size: 26px
+                line-height: 34px
+                color: $defauli-color
         .advicebtn
-            padding: 60px 65px 0 0;
+            padding: 60px 65px 0 0
             a
-                width: 150px;
+                width: 150px
 
 @media (min-width: 1200px)
     .container
-        width: 1200px;
+        width: 1200px
     .headtop
         .navbar-header
-            margin-right: 85px;
+            margin-right: 85px
 
     .protlshegt        
-        height: 455px;
+        height: 455px
     
     .protmore
-        margin-bottom: 0px;
+        margin-bottom: 0px
         .protlstex
-            height: 270px;
+            height: 270px
     
     .invesguide
         .invesdesc
-            height: 200px;            
+            height: 200px            
         .invesguidetex
-            max-height: 138px;
+            max-height: 138px
 
     .abttext
-        height: 180px;
+        height: 180px
 
     .advicetion
         .advicetxe
-            width: auto;
+            width: auto
         .advicebtn
-            padding: 60px 65px 0 0;
+            padding: 60px 65px 0 0
             a
-                width: 150px;
+                width: 150px
