@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
     <meta name="renderer" content="webkit">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
                 </button>
                 <a href="index.html"><img src="images/logo.png" alt=""></a>
             </div>
-            <div class="collapse navbar-collapse navbar-left headlink col-lg-offset-1">
+            <div class="collapse navbar-collapse navbar-left headlink col-lg-offset-1" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">首页</a></li>
                     <li><a href="about.html">关于我们</a></li>
@@ -38,7 +40,7 @@
         </div>
     </nav>
 
-    <div class="smallban" style="background-image:url(images/smallban01.jpg);">
+    <div class="smallban" style="background-image:url(images/smallban04.jpg);">
         <div></div>
     </div>
 
@@ -53,10 +55,44 @@
         <div class="row clearfix">
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                 <div class="case-sect01 clearfix">
-                    
+                    <p class="case-sect01-til">玉溪峨山碎石生产线</p>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <ul class="list-inline clearfix">
+                                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <p><span>加工物料：</span>石灰石</p>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <p><span>产　　量：</span>350t/h</p>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p><span>出料粒度：</span>0-5mm、 5-10mm、10-20mm、20-31.5mm</p>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p><span>应用领域：</span>高速、桥梁等工程项目</p>
+                                </li>
+                                <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p><span>设备配置：</span>GZD1300*4900振动给料机、PE900*1200颚式破碎机、PFW1315Ⅲ欧版反击式破碎机2台、4YZS2460振动筛2台</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <a class="case-sect01-btn" href="#"><span></span>设备咨询</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="case-sect02 clearfix">
-                    
+                <div class="case-sect02 clearfix">                    
+                    <div id="owl-demo" class="owl-carousel case-imglist-owl">
+                            <div class="case-sect02-img">
+                                <img class="img-responsive" src="images/caseimg01.jpg" alt="">
+                            </div>
+                            <div class="case-sect02-img">
+                                <img class="img-responsive" src="images/aboutsml02.jpg" alt="">
+                            </div>
+                            <div class="case-sect02-img">
+                                <img class="img-responsive" src="images/invesadd01.jpg" alt="">
+                            </div>
+                    </div>
                 </div>
                 <div class="case-sect03 clearfix">
                     <div class="case-scene">
@@ -211,5 +247,30 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(function(){
+            
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                nav: true,
+                autoHeight: true, 
+                navText: ["<",">"],
+                dots:false,
+                responsive:{
+                0:{
+                    items: 1,
+                },
+                430:{
+                    items: 1,
+                },
+                768:{
+                    items: 1,
+                },
+            },
+    
+            });
+        });
+    </script>
 </body>
 </html>

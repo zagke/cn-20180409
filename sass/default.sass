@@ -5,6 +5,9 @@ $defauli-color: #22a7f0
     white-space: nowrap
     text-overflow: ellipsis
 
+body
+    font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif
+
 a
     &:hover,&:visited,&:focus
         text-decoration: none
@@ -15,15 +18,15 @@ a
     border: none
     border-bottom: 3px solid $defauli-color
     .navbar-header
-        padding: 19px 0
+        padding: 15px 0
     .headhottel
         font-size: 16px
-        line-height: 58px
+        line-height: 50px
         color: #f00
     .headlink
         font-size: 16px
         .navbar-nav>li>a    
-            line-height: 58px
+            line-height: 50px
             color: #646464
             &:focus,&:hover
                 color: $defauli-color
@@ -40,8 +43,7 @@ a
         .headhottel
             line-height: 50px
         .headlink
-            .navbar-nav>li>a    
-                line-height: 50px
+            .navbar-nav>li>a
                 &:focus,&:hover
                     color: $defauli-color
         .navbar-nav>li.active>a
@@ -586,6 +588,7 @@ footer
 .casemoer
     background-color: #f7f7f7
     margin-bottom: -30px
+    margin-top: 50px
     padding-bottom: 30px
     li
         a
@@ -884,7 +887,156 @@ footer
         a
             margin: 0 10px
 
+.case-sect01
+    background-color: #f7f7f7
+    margin-bottom: 30px
+    padding: 30px
+    p
+        margin-bottom: 0
+    .case-sect01-til
+        font-size: 24px
+        line-height: 24px
+        color: $defauli-color
+        padding-bottom: 20px
+    ul
+        margin-bottom: 0
+        margin-left: 0
+        li
+            padding: 5px 0
+            line-height: 24px
+            span
+                color: $defauli-color
+    .case-sect01-btn
+        background-color: $defauli-color
+        display: block
+        color: #fff
+        font-size: 18px
+        line-height: 20px
+        padding: 12px 0
+        text-align: center
+        margin-top: 102px
+        span
+            display: inline-block
+            width: 24px
+            height: 20px
+            margin-right: 15px
+            vertical-align: top
+            background: transparent url("../images/case-sect01-btn.png") no-repeat scroll center center 
+
+.case-sect02
+    margin-bottom: 10px
+    .case-sect02-img
+        img
+            margin: 0 auto
+    .case-imglist-owl
+        .owl-controls
+            position: relative
+            .owl-next,.owl-prev
+                position: absolute
+                width: 55px
+                height: 55px
+                line-height: 55px
+                font-size: 36px
+                font-family: '宋体'
+                bottom: 128px
+                padding: 0
+                text-align: center
+            .owl-next
+                right: 0
+            .owl-prev
+                left: 0
+
+.case-sect03
+    margin-bottom: 20px
+    p
+        margin-bottom: 0
+        line-height: 30px
+    .case-cont-til
+        font-size: 20px
+        padding: 5px 0
+        color: $defauli-color
+    .case-scene,.case-evaluation
+        padding: 10px 0 10px
+
+.contact-content
+    p
+        margin-bottom: 0
+    .contact-text
+        padding-bottom: 20px
+        .contact-text-link
+            height: 8
+            background-color: #f7f7f7
+            i
+                display: block
+                height: 8px
+                width: 307px
+                background-color: $defauli-color
+        .contact-text-til
+            font-size: 24px
+            line-height: 32px
+            color: $defauli-color
+            padding: 15px 0
+            span
+                font-size: 18px
+        .contact-text-tex
+            font-size: 14px
+            line-height: 30px
+    .contact-maps
+        padding: 20px 0
+    .contact-way
+        text-align: center
+        padding: 20px 0
+        .contact-way-til
+            line-height: 32px
+            padding: 10px 0
+            font-size: 16px
+            color: $defauli-color
+            .contact-way-ico
+                display: inline-block
+                width: 37px
+                height: 32px
+                vertical-align: top
+                margin-right: 10px
+                background-position: center center
+                background-repeat: no-repeat
+                background-size: contain
+                &.contact-way-ico01
+                    background-image: url('../images/contact-way-ico01.png')
+                &.contact-way-ico02
+                    background-image: url('../images/contact-way-ico02.png')
+                &.contact-way-ico03
+                    background-image: url('../images/contact-way-ico03.png')
+        .contact-way-tex
+            line-height: 26px
+
 @media (max-width: 767px)
+    
+    .headtop
+        margin: 0px
+        background-color: transparent
+        border: none
+        border-bottom: 3px solid $defauli-color
+        .navbar-header
+            padding: 15px 0
+        .headhottel
+            font-size: 16px
+            line-height: 20px
+            color: #f00
+        .headlink
+            font-size: 16px
+            .navbar-nav
+                margin: 0 -15px
+            .navbar-nav>li>a
+                line-height: 20px
+                color: #646464
+                &:focus,&:hover
+                    color: $defauli-color
+        .navbar-nav>li.active>a
+            background-color: $defauli-color
+            color: #fff
+            &:focus,&:hover
+                background-color: $defauli-color
+                color: #fff
 
     .advicetion
         height: auto
