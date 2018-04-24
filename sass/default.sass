@@ -5,6 +5,10 @@ $defauli-color: #22a7f0
     white-space: nowrap
     text-overflow: ellipsis
 
+@mixin invest-list-hover
+    background-color: $defauli-color
+    color: #fff
+
 body
     font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif
 
@@ -25,7 +29,7 @@ a
         color: #f00
     .headlink
         font-size: 16px
-        .navbar-nav>li>a    
+        .navbar-nav>li>a
             line-height: 50px
             color: #646464
             &:focus,&:hover
@@ -67,15 +71,15 @@ a
         &:focus,&:hover
             color: $defauli-color
 
-.protmorlist
+.prot-mor-list
     padding-top: 30px
     padding-bottom: 30px    
-    .protlsmortil
+    .prot-lsmor-til
         font-size: 18px
         font-weight: bold
         line-height: 30px
         padding: 10px 0
-    .protlsmorbtn
+    .prot-lsmor-btn
         height: 30px
         line-height: 28px
         text-align: center
@@ -88,68 +92,65 @@ a
             color: #fff
             background-color: $defauli-color
             border-color: $defauli-color
-
-.promrlist
-    background-color: #eeeeee
-
-.protmore
-    background-color: $defauli-color
-    padding: 20px
-    color: #fff
-    margin-bottom: 30px
-    a
+    .promr-list
+        background-color: #eeeeee
+    .prot-more
+        background-color: $defauli-color
+        padding: 20px
         color: #fff
-    .protlstex
-        line-height: 30px
-    h3
-        margin: 0
-        padding-bottom: 20px
-        margin-bottom: 25px
-        margin-top: 0px
-        position: relative
-        &:after
-            position: absolute
-            left: 50%
-            width: 80px
-            height: 2px
-            margin-left: -40px
-            bottom: 0
-            background-color: #fff
-            display: block 
-            content: ''
-
-.advicetion
-    margin-top: 30px
-    background-color: #f7f7f7
-    height: 155px
-    .advicetxe
-        padding: 37px 0 0 50px
-        line-height: 36px
-        font-size: 20px
-        p
-            margin: 0
-        .adviceant
-            font-size: 26px
-            line-height: 42px
-            color: $defauli-color
-    .advicebtn
+        margin-bottom: 30px
         a
-            display: block
-            height: 40px
-            line-height: 40px
-            background-color: $defauli-color
             color: #fff
-            border-radius: 20px
-            text-align: center
+        .prot-ls-tex
+            line-height: 30px
+        h3
+            margin: 0
+            padding-bottom: 20px
+            margin-bottom: 25px
+            margin-top: 0px
+            position: relative
+            &:after
+                position: absolute
+                left: 50%
+                width: 80px
+                height: 2px
+                margin-left: -40px
+                bottom: 0
+                background-color: #fff
+                display: block 
+                content: ''    
+    .prot-ls-hegt
+        padding-top: 30px
+        padding-bottom: 20px
 
-.protlshegt
-    padding-top: 30px
-    padding-bottom: 20px
-    
-.caseshow
+    .advice-tion
+        margin-top: 30px
+        background-color: #f7f7f7
+        height: 155px
+        .advice-txe
+            padding: 37px 0 0 50px
+            line-height: 36px
+            font-size: 20px
+            p
+                margin: 0
+            .advice-ant
+                font-size: 26px
+                line-height: 42px
+                color: $defauli-color
+        .advice-btn
+            a
+                display: block
+                height: 40px
+                line-height: 40px
+                background-color: $defauli-color
+                color: #fff
+                border-radius: 20px
+                text-align: center
+
+.case-show
     background: url(../images/caseshowbg.jpg) no-repeat center center / cover 
     padding: 50px 0
-    .caseshotil
+    .case-show-til
         color: #fff
         line-height: 30px
         padding-bottom: 24px
@@ -167,16 +168,16 @@ a
             display: block 
             content: ''
             
-    .casescene
+    .case-scene
         background-color: #fff
-        .casescenedesc
+        .case-scene-desc
             height: 185px
             padding: 10px 30px 20px
             line-height: 30px
             p
                 margin: 0
                 @include  beyond-hidden
-            .casescedesctil
+            .case-scene-desc-til
                 font-size: 18px
                 line-height: 46px
                 margin-bottom: 10px
@@ -188,41 +189,38 @@ a
         line-height: 50px
         margin-top: 0px
         margin-bottom: 10px
-
-.invesguide
-    font-size: 16px
-    .invesguidetil
-        font-size: 18px
-        line-height: 40px
-        padding-top: 10px
-        margin-bottom: 0px
+    .text-defa
         color: $defauli-color
-        @include  beyond-hidden
-    .invesguidetex
-        font-size: 14px
-        line-height: 23px
-        color: #323232
-        margin-bottom: 0px
-        overflow: hidden
-    ul>li
-        padding-left: 20px
-        padding-right: 20px
-        line-height: 46px
-        a
-            color: #525252
-        &:nth-child(2n+1)
-            background-color: #f1f1f1
-
-.abttext
-    background-color: #f1f1f1
-    line-height: 30px
-    padding-top: 10px
-    padding-right: 25px
-    padding-bottom: 10px
-    padding-left: 25px
-
-.textdefa
-    color: $defauli-color
+    .invesguide
+        font-size: 16px
+        .invesguide-til
+            font-size: 18px
+            line-height: 40px
+            padding-top: 10px
+            margin-bottom: 0px
+            color: $defauli-color
+            @include  beyond-hidden
+        .invesguide-tex
+            font-size: 14px
+            line-height: 23px
+            color: #323232
+            margin-bottom: 0px
+            overflow: hidden
+        ul>li
+            padding-left: 20px
+            padding-right: 20px
+            line-height: 46px
+            a
+                color: #525252
+            &:nth-child(2n+1)
+                background-color: #f1f1f1
+    .abt-text
+        background-color: #f1f1f1
+        line-height: 30px
+        padding-top: 10px
+        padding-right: 25px
+        padding-bottom: 10px
+        padding-left: 25px
 
 /* 底部 */
 footer 
@@ -235,40 +233,45 @@ footer
             color: #6dbae3
     p
         margin: 0
-.footnav
-    padding: 47px 0 26px
-    line-height: 28px
-    .footnavtel
-        height: 168px
+    .foot-nav
+        padding: 47px 0 26px
         line-height: 28px
-        border-right: 1px solid #6dbae3
-        .footnavimg
-            margin-bottom: 25px
-    h5
-        font-size: 16px
-        line-height: 24px
-
-.footcopy 
-    border-top: 1px solid #007bbc
-    text-align: center
-    padding: 15px 0
-    p
-        display: inline-block
-        line-height: 24px
-        margin: 0 20px
+        .foot-nav-tel
+            height: 168px
+            line-height: 28px
+            border-right: 1px solid #6dbae3
+            .foot-nav-img
+                margin-bottom: 25px
+        h5
+            font-size: 16px
+            line-height: 24px
+    .foot-copy
+        border-top: 1px solid #007bbc
+        text-align: center
+        padding: 15px 0
+        p
+            display: inline-block
+            line-height: 24px
+            margin: 0 20px
 /* 关于我们 */
-.abtlabtil
+.abt-lab-til
     font-size: 30px
     line-height: 36px
     color: $defauli-color
     text-align: center
     padding-bottom: 10px
     font-weight: bold
-    .abtlabtilsml
+    .abt-lab-til-sml
         font-size: 24px
         font-weight: normal
 
-.abtlabetil
+.abt-info
+    p
+        line-height: 30px
+        margin: 0px
+        margin-top: 20px
+
+.abt-labe-til
     font-size: 24px
     font-weight: bold
     color: $defauli-color
@@ -276,27 +279,20 @@ footer
     text-align: center
     margin-bottom: 20px
 
-.abtstrengimg
-    &>div
-        padding: 1px
-
-.abtinfo
-    p
-        line-height: 30px
-        margin: 0px
-        margin-top: 20px
-
-.abtstrength
+.abt-strength
     padding: 15px 0
-    .abtstrengtex
+    .abt-strength-img
+        &>div
+            padding: 1px
+    .abt-strength-text
         line-height: 30px
         p
             margin-top: 20px
             margin-bottom: 0px
 
-.abthistory
+.abt-history
     padding: 15px 0
-    .nav-tabs
+    .abt-history-tab
         border: none
         margin-bottom: 25px
         background-color: #dcdcdc
@@ -312,21 +308,21 @@ footer
                 &:focus,&:hover
                     border: none  
                     color: $defauli-color
-            &.abthisinit a,&.abthisinit a:focus,&.abthisinit a:hover
+            &.abt-his-init a,&.abt-his-init a:focus,&.abt-his-init a:hover
                 margin-right: 0px
                 background-color: #b5b5b5
                 color: #000       
             &.active a,&.active a:focus,&.active a:hover
                 background-color: $defauli-color
                 color: #fff   
-    .tab-content
+    .abt-history-tab-cont
         line-height: 30px
         p
             margin-bottom: 10px
 
 /* 投资指导 */
 
-.inveshot
+.inves-hot
     text-align: center
     &>div
         display: inline-block
@@ -335,12 +331,12 @@ footer
         position: relative
         border-left: 6px solid  $defauli-color
         border-right: 6px solid  $defauli-color
-        .inveshotch
+        .inves-hot-ch
             font-size: 30px
             line-height: 35px
             font-weight: bold
             margin-bottom: 0
-        .inveshoten
+        .inves-hot-en
             font-size: 18px
             line-height: 25px
             margin-bottom: 0        
@@ -358,7 +354,7 @@ footer
             right: 0
             left: auto
 
-.investsectiontil
+.invests-ection-til
     font-size: 24px
     color: $defauli-color
     line-height: 24px
@@ -372,16 +368,12 @@ footer
             &:hover
                 color: $defauli-color
 
-.investsection01,.investsection02,.investsection03
+.invests-ection01,.invests-ection02,.invests-ection03
     padding: 15px 0
     ul
         margin-bottom: 0
 
-@mixin invest-list-hover
-    background-color: $defauli-color
-    color: #fff
-
-.investmarketfat
+.invest-marketfat
     padding: 0 15px 30px
     a
         display: block
@@ -391,18 +383,18 @@ footer
         p
             margin-bottom: 0
             color: #646464
-        .invmkfaimg
+        .inv-mkfa-img
             margin: 0 30px 0 0
-        .invmkfatil
+        .inv-mkfa-til
             font-size: 16px
             line-height: 46px
             padding-top: 15px
             color: $defauli-color
             @include  beyond-hidden
-        .invmkfatme
+        .inv-mkfa-tme
             line-height: 26px
             margin-bottom: 10px
-        .invmkfatex
+        .inv-mkfa-tex
             line-height: 30px
             height: 60px
             overflow: hidden
@@ -411,7 +403,7 @@ footer
         p
             color: #fff
 
-.investlstion01
+.invest-lstion-01
     li
         a
             display: block
@@ -422,7 +414,7 @@ footer
             @include  beyond-hidden
         a:hover,a:focus
             @include invest-list-hover
-.investlstion02
+.invest-lstion-02
     margin-top: -15px
     margin-bottom: -15px
     li
@@ -434,20 +426,20 @@ footer
             color: #525252
             background-color: #f1f1f1
             line-height: 26px
-            .inveslstil
+            .inves-ls-til
                 color: $defauli-color
                 font-size: 16px
                 line-height: 38px
                 margin-bottom: 12px
                 @include  beyond-hidden
-            .inveslstex
+            .inves-ls-tex
                 height: 130px
                 overflow: hidden
         a:hover,a:focus
             @include invest-list-hover
-            .inveslstil
+            .inves-ls-til
                 color: #fff
-.investlstion03
+.invest-lstion-03
     li
         a
             display: block
@@ -463,17 +455,17 @@ footer
         a:hover,a:focus
             @include invest-list-hover
 
-.invdetahead
+.inv-deta-head
     text-align: center
     border-bottom: 1px dotted #dcdcdc
     margin-bottom: 15px
     p
         margin-bottom: 0
-    .invdetatil
+    .inv-deta-til
         font-size: 24px
         line-height: 24px
         color: $defauli-color
-    .invdetatam
+    .inv-deta-tam
         font-size: 14px
         line-height: 22px
         padding: 15px 0
@@ -484,7 +476,7 @@ footer
     img
         margin: 0 auto
 
-.invdetaflip
+.inv-deta-flip
     border-top: 1px solid #dcdcdc
     margin: 25px 0 0
     padding: 10px 0
@@ -496,13 +488,13 @@ footer
         &:hover,&:focus
             color: $defauli-color
 
-.invedetasidetil
+.inv-deta-side-til
     font-size: 18px
     line-height: 32px
     color: $defauli-color
     margin-bottom: 24px
 
-.invdetasidelst
+.inv-deta-side-lst
     p
         margin-bottom: 0px
     li
@@ -510,30 +502,30 @@ footer
         a
             display: block
             background-color: #f7f7f7
-            .invdetadilsttil
+            .inv-deta-dilst-til
                 color: $defauli-color
                 font-size: 16px
                 line-height: 40px
                 padding-left: 15px
                 padding-right: 15px
-            .invdetadilstsiz
+            .inv-deta-dilst-siz
                 font-size: 14px
                 line-height: 22px
                 padding-left: 15px
                 padding-right: 15px
                 color: #646464
-            .invdetadilstnum
+            .inv-deta-dilst-num
                 line-height: 22px
                 padding:  0 15px 20px 15px   
                 color: #646464
             &:hover,&:focus
                 @include invest-list-hover                
-                .invdetadilsttil,.invdetadilstsiz,.invdetadilstnum
+                .inv-deta-dilst-til,.inv-deta-dilst-siz,.inv-deta-dilst-num
                     color: #fff
 
 /* 产品列表 */
 
-.prostlisttab
+.prost-list-tab
     ul
         margin-bottom: 0
     li
@@ -552,8 +544,7 @@ footer
                 color: #fff
                 background-color: $defauli-color
 
-
-.prostlist
+.prost-list
     li
         margin-top: 30px
         a
@@ -563,29 +554,29 @@ footer
                 margin-bottom: 0
                 span
                     margin-right: 3px
-            .prostlisttil
+            .prost-list-til
                 color: #323232
                 font-size: 16px
                 line-height: 38px
                 padding-left: 10px
                 padding-right: 10px
-            .prostlistsiz
+            .prost-list-siz
                 font-size: 14px
                 line-height: 30px
                 padding-left: 10px
                 padding-right: 10px
                 color: #646464
-            .prostlistnum
+            .prost-list-num
                 line-height: 30px
                 padding:  0 10px 10px 10px   
                 color: #646464
             &:hover,&:focus       
-                .prostlisttil
+                .prost-list-til
                     color: $defauli-color
-                .prostlistsiz span,.prostlistnum span
+                .prost-list-siz span,.prost-list-num span
                     color: $defauli-color
 
-.casemoer
+.case-moer
     background-color: #f7f7f7
     margin-bottom: -30px
     margin-top: 50px
@@ -597,33 +588,32 @@ footer
             text-align: center
             &:hover,&:focus
                 color: $defauli-color
+    .case-mres-tile
+        text-align: center
+        line-height: 34px
+        height: 94px
+        position: relative    
+        padding-top: 30px
+        padding-bottom: 30px
+        span
+            background: #f7f7f7
+            padding: 0 20px
+            display: inline-block
+            position: relative
+            font-size: 24px
+            color: $defauli-color
+        &:before
+            position: absolute
+            width: 100%
+            height: 1px
+            left: 0
+            top: 50%
+            background-color: $defauli-color
+            display: block 
+            content: ''
 
-.casemrestile
-    text-align: center
-    line-height: 34px
-    height: 94px
-    position: relative    
-    padding-top: 30px
-    padding-bottom: 30px
-    span
-        background: #f7f7f7
-        padding: 0 20px
-        display: inline-block
-        position: relative
-        font-size: 24px
-        color: $defauli-color
-    &:before
-        position: absolute
-        width: 100%
-        height: 1px
-        left: 0
-        top: 50%
-        background-color: $defauli-color
-        display: block 
-        content: ''
-
-.contfrom
-    .contfromtil
+.cont-form
+    .cont-form-til
         font-size: 24px
         line-height: 34px
         padding: 15px 0
@@ -636,7 +626,7 @@ footer
         padding: 0 15px 0 65px
         position: relative
         margin-bottom: 25px
-        .contformico
+        .cont-form-ico
             position: absolute
             width: 50px
             height: 45px
@@ -646,19 +636,19 @@ footer
             background-position: center center
             background-repeat: no-repeat
             background-size: cover
-            &.contformico01
+            &.cont-form-ico01
                 background-image: url('../images/contformico01.png')
-            &.contformico02
+            &.cont-form-ico02
                 background-image: url('../images/contformico02.png')
-            &.contformico03
+            &.cont-form-ico03
                 background-image: url('../images/contformico03.png')
-            &.contformico04
+            &.cont-form-ico04
                 background-image: url('../images/contformico04.png')
-            &.contformico05
+            &.cont-form-ico05
                 background-image: url('../images/contformico05.png')
-            &.contformico06
+            &.cont-form-ico06
                 background-image: url('../images/contformico06.png')
-            &.contformico07
+            &.cont-form-ico07
                 background-image: url('../images/contformico07.png')
         input
             border: 1px solid #dcdcdc
@@ -686,7 +676,7 @@ footer
             line-height: 40px
             padding: 0 15px
             border-radius: 0
-        .contformbtn
+        .cont-form-btn
             background-color: $defauli-color
             color: #fff
             width: 250px
@@ -696,10 +686,10 @@ footer
             float: right
 
 
-.protsect01,.protsect02,.protsect03
+.prot-sect01,.prot-sect02,.prot-sect03
     p
         margin-bottom: 0        
-    .protinfotil
+    .prot-info-til
         height: 45px
         line-height: 45px
         font-size: 20px
@@ -707,43 +697,41 @@ footer
         background-color: $defauli-color
         color: #fff
         margin-bottom: 30px        
-    .protinfcom
+    .prot-info-com
         color: $defauli-color
 
-.protinfopt
-    margin-bottom: 20px
-
-.protsect01tx
-    p
-        line-height: 26px
-        margin: 6px 0
-
-.proinfoconsbtn
-    display: block
-    height: 40px
-    line-height: 40px
-    font-size: 18px
-    text-align: center
-    background-color: $defauli-color
-    color: #fff
-    &:hover,&:focus
-        color: #fff
-
-.proinfoconstel
-    text-align: center
-    color:  $defauli-color
-    font-size: 26px
-    line-height: 40px
-    font-weight: bold
-    .prottelicom
-        display: inline-block
-        margin-right: 10px
-        width: 50px
+.prot-sect01
+    .prot-infopt
+        margin-bottom: 20px
+    .prot-sect01tx
+        p
+            line-height: 26px
+            margin: 6px 0
+    .pro-info-cons-btn
+        display: block
         height: 40px
-        vertical-align: top
-        background: transparent url("../images/prottelicom.png") no-repeat scroll center center / contain 
+        line-height: 40px
+        font-size: 18px
+        text-align: center
+        background-color: $defauli-color
+        color: #fff
+        &:hover,&:focus
+            color: #fff
+    .pro-info-cons-tel
+        text-align: center
+        color:  $defauli-color
+        font-size: 26px
+        line-height: 40px
+        font-weight: bold
+        .prot-tel-icom
+            display: inline-block
+            margin-right: 10px
+            width: 50px
+            height: 40px
+            vertical-align: top
+            background: transparent url("../images/prottelicom.png") no-repeat scroll center center / contain 
 
-.prostconttil
+.prost-cont-til
     line-height: 20px
     font-size: 18px
     color: $defauli-color
@@ -751,22 +739,21 @@ footer
     padding-left: 30px
     background: transparent url("../images/prostconttil.png") no-repeat scroll left center 
 
-.protsect02    
+.prot-sect02
     line-height: 30px
     color: #646464
     .pro-advantage
         p
             padding:  5px 0
-        .prostconttil
-            @extend .prostconttil
+        .prost-cont-til
+            @extend .prost-cont-til
     .pro-parameters
         p
             line-height: 36px
-        .prostconttil
-            @extend .prostconttil
+        .prost-cont-til
+            @extend .prost-cont-til
 
-
-.protsect03
+.prot-sect03
     ul
         margin-left: 0
     li
@@ -783,36 +770,36 @@ footer
     background-color: #f6f6f6
     padding-bottom: 20px
 
-.case-typi-til
-    font-size: 24px
-    line-height: 24px
-    color: $defauli-color
-
-.case-typi-listimg
-    margin-bottom: 0
-    li
-        margin-top: 20px
-        a
-            p
-                margin-bottom: 0
-            .case-typi-list-til
-                color: #323232
-                font-size: 16px
-                line-height: 24px
-                padding: 7px 0
-            &:hover .case-typi-list-til,&:focus .case-typi-list-til
-                color: $defauli-color
-
-.case-typi-list
-    li
-        padding: 7px 0
-        font-size: 16px
+.case-typi-hot
+    .case-typi-til
+        font-size: 24px
         line-height: 24px
-        a
-            color: #323232
-            &:hover,&:focus
-                color: $defauli-color
+        color: $defauli-color
+    .case-typi-listimg
+        margin-bottom: 0
+        li
+            margin-top: 20px
+            a
+                p
+                    margin-bottom: 0
+                .case-typi-list-til
+                    color: #323232
+                    font-size: 16px
+                    line-height: 24px
+                    padding: 7px 0
+                &:hover .case-typi-list-til,&:focus .case-typi-list-til
+                    color: $defauli-color
+    .case-typi-list
+        li
+            padding: 7px 0
+            font-size: 16px
+            line-height: 24px
+            a
+                color: #323232
+                &:hover,&:focus
+                    color: $defauli-color
 
+/* 案例中心 */
 .case-table
     margin-bottom: 30px
     ul
@@ -957,7 +944,7 @@ footer
         color: $defauli-color
     .case-scene,.case-evaluation
         padding: 10px 0 10px
-
+/* 联系我们 */
 .contact-content
     p
         margin-bottom: 0
@@ -1038,19 +1025,19 @@ footer
                 background-color: $defauli-color
                 color: #fff
 
-    .advicetion
+    .advice-tion
         height: auto
-        .advicetxe
+        .advice-txe
             padding: 15px
             line-height: 24px
             font-size: 16px
             p
                 margin: 0
-            .adviceant
+            .advice-ant
                 font-size: 20px
                 line-height: 32px
                 color: $defauli-color
-        .advicebtn
+        .advice-btn
             padding: 5px 25px 25px
             width: 100%
             a
@@ -1061,89 +1048,86 @@ footer
         img
             width: 100%
 
-
     .promrlist
         margin-bottom: 20px
         padding: 0 0 25px
 
-    .invesguide        
+    .invesguide
         .invesdesc
             padding-bottom: 15px
         li:not(.invesdesc)>a
             display: block 
             @include  beyond-hidden
 
-
-    .casesceneimg
+    .case-scene-img
         img
             width: 100%
 
-    .adviceico
+    .advice-ico
         display: none
 
-    .footnav
+    .foot-nav
         padding: 15px 0
-        .footnavtel
+        .foot-nav-tel
             text-align: center
             height: auto
-            .footnavimg
+            .foot-nav-img
                 margin-bottom: 10px
 
-    .investmarketfat 
+    .invest-marketfat 
         a
             padding-right: 0
-            .invmkfaimg 
+            .inv-mkfa-img 
                 width: 100%
                 float: none!important
                 margin: 0 0 0    
                 img
                     width: 100%
-            .invmkfatil,.invmkfatme,.invmkfatex
+            .inv-mkfa-til,.inv-mkfa-tme,.inv-mkfa-tex
                 padding-left: 15px
                 padding-right: 15px
-            .invmkfatil
+            .inv-mkfa-til
                 padding-top: 10px
-            .invmkfatme
+            .inv-mkfa-tme
                 margin: 0
-            .invmkfatex
+            .inv-mkfa-tex
                 margin-bottom: 15px
 
-    .investlstion01
+    .invest-lstion-01
         li
             &:nth-child(2n+1) a
                 background-color: #f1f1f1
             a:hover,a:focus
                 @include invest-list-hover
-    .invdetasidelst
+    .inv-deta-side-lst
         li
             a
-                .invdetadilstimg
+                .inv-deta-dilst-img
                     img
                         width: 100%
                     
-
 @media (min-width: 768px)
 
-    .invesguide          
-        .invesguidetex
+    .invesguide
+        .invesguide-tex
             max-height: 138px
 
-    .advicetion
-        .advicetxe
+    .advice-tion
+        .advice-txe
             padding: 35px 0 0 20px
             line-height: 24px
             font-size: 16px
-            .adviceant
+            .advice-ant
                 font-size: 20px
                 line-height: 42px
                 color: $defauli-color
-        .advicebtn
+        .advice-btn
             padding: 60px 25px 0 0
             a
                 width: 120px
 
     
-    .investlstion01
+    .invest-lstion-01
         li
             &:nth-child(4n+1) a,&:nth-child(4n+2) a
                 background-color: #f1f1f1
@@ -1154,31 +1138,31 @@ footer
     .navbar-nav>li>a
         padding: 15px 10px
     
-    .abtimge
+    .abt-imge
         img
             width: 100%
 
 @media (min-width: 992px)
 
-    .invesguide        
+    .invesguide
         .invesdesc
             height: 173px            
-        .invesguidetex
+        .invesguide-tex
             max-height: 138px
     
     .abttext
         height: 210px
     
-    .advicetion
-        .advicetxe
+    .advice-tion
+        .advice-txe
             padding: 37px 0 0 50px
             line-height: 28px
             font-size: 18px
-            .adviceant
+            .advice-ant
                 font-size: 26px
                 line-height: 34px
                 color: $defauli-color
-        .advicebtn
+        .advice-btn
             padding: 60px 65px 0 0
             a
                 width: 150px
@@ -1190,27 +1174,27 @@ footer
         .navbar-header
             margin-right: 85px
 
-    .protlshegt        
+    .prot-ls-hegt
         height: 455px
     
-    .protmore
+    .prot-more
         margin-bottom: 0px
-        .protlstex
+        .prot-ls-tex
             height: 270px
     
     .invesguide
         .invesdesc
             height: 200px            
-        .invesguidetex
+        .invesguide-tex
             max-height: 138px
 
     .abttext
         height: 180px
 
-    .advicetion
-        .advicetxe
+    .advice-tion
+        .advice-txe
             width: auto
-        .advicebtn
+        .advice-btn
             padding: 60px 65px 0 0
             a
                 width: 150px
