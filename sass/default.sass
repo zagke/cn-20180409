@@ -22,13 +22,15 @@ a
     border: none
     border-bottom: 3px solid $defauli-color
     .navbar-header
-        padding: 15px 0
+        padding: 14px 0 0px
     .headhottel
         font-size: 16px
         line-height: 50px
         color: #f00
+        margin:  20px 15px 0px
     .headlink
         font-size: 16px
+        padding: 0
         .navbar-nav>li>a
             line-height: 50px
             color: #646464
@@ -43,7 +45,7 @@ a
     &.index-nav
         border-bottom: none        
         .navbar-header
-            padding: 15px 0
+            
         .headhottel
             line-height: 50px
         .headlink
@@ -99,19 +101,23 @@ a
             border-color: $defauli-color
     .prot-more
         background-color: $defauli-color
-        padding: 20px
+        padding: 30px
         color: #fff
         margin-bottom: 30px
         a
             color: #fff
         .prot-ls-tex
             line-height: 30px
+            margin-bottom: 17px
         h3
             margin: 0
-            padding-bottom: 20px
-            margin-bottom: 25px
+            padding-bottom: 23px
+            margin-bottom: 23px
             margin-top: 0px
             position: relative
+            font-size: 30px
+            line-height: 30px
+            font-weight: bold
             &:after
                 position: absolute
                 left: 50%
@@ -121,7 +127,10 @@ a
                 bottom: 0
                 background-color: #fff
                 display: block 
-                content: ''    
+                content: ''
+        &.prot-ls-hegt
+            padding-top: 37px
+            padding-bottom: 20px
     .prot-ls-hegt
         padding-top: 30px
         padding-bottom: 20px
@@ -134,6 +143,8 @@ a
             padding: 37px 0 0 50px
             line-height: 36px
             font-size: 20px
+            font-weight: bold
+            color: #525252
             p
                 margin: 0
             .advice-ant
@@ -160,6 +171,7 @@ a
         margin-bottom: 30px
         margin-top: 0px
         position: relative
+        font-weight: bold
         &:after
             position: absolute
             left: 50%
@@ -209,6 +221,7 @@ a
                 @include  beyond-hidden
             .case-scene-desc-til
                 font-size: 18px
+                font-weight: bold
                 line-height: 46px
                 margin-bottom: 10px
                 border-bottom: 1px solid #d2d2d2
@@ -219,20 +232,21 @@ a
         line-height: 50px
         margin-top: 0px
         margin-bottom: 10px
+        font-size: 24px
+        font-weight: bold
     .text-defa
         color: $defauli-color
     .invesguide
         font-size: 16px
         .invesguide-til
-            font-size: 18px
+            font-size: 16px
+            font-weight: bold
             line-height: 40px
-            padding-top: 10px
-            margin-bottom: 0px
             color: $defauli-color
             @include  beyond-hidden
         .invesguide-tex
             font-size: 14px
-            line-height: 23px
+            line-height: 26px
             color: #323232
             margin-bottom: 0px
             overflow: hidden
@@ -247,6 +261,7 @@ a
     .abt-text
         background-color: #f1f1f1
         line-height: 30px
+        height: 186px
         padding-top: 10px
         padding-right: 25px
         padding-bottom: 10px
@@ -386,6 +401,7 @@ footer
 
 .invests-ection-til
     font-size: 24px
+    font-weight: bold
     color: $defauli-color
     line-height: 24px
     margin-bottom: 15px
@@ -393,6 +409,7 @@ footer
     span
         float: right
         font-size: 14px
+        font-weight: normal
         a
             color: #333
             &:hover
@@ -678,6 +695,7 @@ footer
 .cont-form
     .cont-form-til
         font-size: 24px
+        font-weight: bold
         line-height: 34px
         padding: 15px 0
         color: $defauli-color
@@ -1034,11 +1052,14 @@ footer
                 background-color: $defauli-color
         .contact-text-til
             font-size: 24px
+            font-weight: bold
             line-height: 32px
-            color: $defauli-color
+            color: #323232
             padding: 15px 0
             span
                 font-size: 18px
+                font-weight: normal
+                color: #646464
         .contact-text-tex
             font-size: 14px
             line-height: 30px
@@ -1216,10 +1237,15 @@ footer
             width: 100%
 
 @media (min-width: 768px)
-
-    .invesguide
-        .invesguide-tex
-            max-height: 138px
+    .colupadd
+        .invesguide
+            .invesdesc
+                padding-bottom: 5px
+            .invesguide-til
+                padding-top: 5px
+                margin-bottom: 3px
+            .invesguide-tex
+                max-height: 104px
 
     .prot-mor-list
         .advice-tion
@@ -1246,7 +1272,7 @@ footer
 
 @media (min-width: 768px) and (max-width:991px)
     .navbar-nav>li>a
-        padding: 15px 10px
+        padding: 20px 10px 10px
     
     .abt-imge
         img
@@ -1254,11 +1280,18 @@ footer
 
 @media (min-width: 992px)
 
-    .invesguide
-        .invesdesc
-            height: 173px            
-        .invesguide-tex
-            max-height: 138px
+    .headtop
+        .navbar-nav>li>a
+            padding: 20px 18px 10px
+    .colupadd
+        .invesguide
+            .invesdesc
+                height: 173px
+            .invesguide-til
+                padding-top: 9px
+                margin-bottom: 5px
+            .invesguide-tex
+                max-height: 104px
     
     .abttext
         height: 210px
@@ -1279,6 +1312,14 @@ footer
                     width: 150px
 
 @media (min-width: 992px) and (max-width:1199px)
+    .colupadd
+        .abt-text
+            height: 209px
+            p
+                margin-bottom: 0
+                max-height: 180px
+                overflow: hidden
+
     .case-typi-hot
         .case-typi-listimg
             li
@@ -1290,13 +1331,14 @@ footer
             li
                 font-size: 14px
 
+
 @media (min-width: 1200px)
     .container
         width: 1200px
     .headtop
         .navbar-header
-            margin-right: 85px
-
+        .navbar-nav>li>a
+            padding: 20px 23px 10px
     .prot-ls-hegt
         height: 455px
     
@@ -1304,12 +1346,15 @@ footer
         margin-bottom: 0px
         .prot-ls-tex
             height: 270px
-    
-    .invesguide
-        .invesdesc
-            height: 200px            
-        .invesguide-tex
-            max-height: 138px
+
+    .colupadd
+        .invesguide
+            .invesdesc
+                height: 210px
+            .invesguide-til
+                padding-top: 19px       
+            .invesguide-tex
+                max-height: 138px
 
     .abttext
         height: 180px
