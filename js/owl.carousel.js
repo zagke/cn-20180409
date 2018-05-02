@@ -287,7 +287,6 @@
 				clones = this._clones,
 				items = this._items,
 				delta = this.settings.loop ? clones.length - Math.max(this.settings.items * 2, 4) : 0;
-			if(clones >items){
 				for (i = 0, n = Math.abs(delta / 2); i < n; i++) {
 					if (delta > 0) {
 						this.$stage.children().eq(items.length + clones.length - 1).remove();
@@ -301,13 +300,6 @@
 						this.$stage.prepend(items[clones[clones.length - 1]].clone().addClass('cloned'));
 					}
 				}
-			}
-			else{
-				clones.push(clones.length / 2);
-				this.$stage.append(items[clones[clones.length - 1]].clone().addClass('cloned'));
-				clones.push(items.length - 1 - (clones.length - 1) / 2);
-				this.$stage.prepend(items[clones[clones.length - 1]].clone().addClass('cloned'));
-			}
 		}
 	}, {
 		filter: [ 'width', 'items', 'settings' ],

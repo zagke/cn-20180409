@@ -53,7 +53,7 @@
 
     <div class="container">
         <div class="row clearfix">
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <div class="case-sect01 clearfix">
                     <p class="case-sect01-til">玉溪峨山碎石生产线</p>
                     <div class="row">
@@ -161,10 +161,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-xs">
                 <p class="inv-deta-side-til">热销产品</p>
-                <ul class="list-unstyled inv-deta-side-lst">
-                    <li>
+                <ul class="list-unstyled row inv-deta-side-lst">
+                    <li class="col-lg-12 col-md-12 col-sm-4">
                         <a href="#">
                             <p class="inv-deta-dilst-img"><img class="img-responsive" src="images/invesmor01.jpg" alt=""></p>
                             <p class="inv-deta-dilst-til">欧版颚式破碎机</p>
@@ -172,7 +172,7 @@
                             <p class="inv-deta-dilst-num">产量: 12-650t/h</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="col-lg-12 col-md-12 col-sm-4">
                         <a href="#">
                             <p class="inv-deta-dilst-img"><img class="img-responsive" src="images/invesmor02.jpg" alt=""></p>
                             <p class="inv-deta-dilst-til">HST单缸液压圆锥破碎机</p>
@@ -180,7 +180,7 @@
                             <p class="inv-deta-dilst-num">产量: 12-650t/h</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="col-lg-12 col-md-12 col-sm-4">
                         <a href="#">
                             <p class="inv-deta-dilst-img"><img class="img-responsive" src="images/invesmor03.jpg" alt=""></p>
                             <p class="inv-deta-dilst-til">5X系列高效离心冲击式破碎机</p>
@@ -252,7 +252,6 @@
         $(function(){
             
             $('.owl-carousel').owlCarousel({
-                loop:true,
                 nav: true,
                 autoHeight: true, 
                 navText: ["<",">"],
@@ -260,12 +259,16 @@
                 responsive:{
                     0:{
                         items: 1,
+                        nav: false,
+                        dots:true,
                     },
                     430:{
                         items: 1,
                     },
                     768:{
                         items: 1,
+                        nav:true,
+                        dots:false,
                     },
                 },
             });

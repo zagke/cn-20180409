@@ -73,7 +73,9 @@ a
 
 .prot-mor-list
     padding-top: 30px
-    padding-bottom: 30px    
+    padding-bottom: 30px
+    .img-responsive
+        margin: 0 auto
     .prot-lsmor-til
         font-size: 18px
         font-weight: bold
@@ -167,13 +169,40 @@ a
             background-color: #fff
             display: block 
             content: ''
-            
+    .case-show-owl
+        .row
+            padding: 0 15px
+        .owl-controls
+            position: relative
+            .owl-next,.owl-prev
+                position: absolute
+                width: 50px
+                height: 50px
+                line-height: 50px
+                font-size: 30px
+                font-family: '宋体'
+                bottom: 228px
+                padding: 0
+                margin: 0
+                text-align: center
+                background-color: rgba(0,0,0,0.4)
+                &:hover
+                    background-color: rgba(0,0,0,0.7)
+            .owl-next
+                right: 15px
+                border-radius: 25px 0 0 25px
+                padding-left: 7px
+            .owl-prev
+                left: 15px
+                border-radius: 0 25px 25px 0
+                padding-right: 7px
     .case-scene
         background-color: #fff
         .case-scene-desc
             height: 185px
             padding: 10px 30px 20px
             line-height: 30px
+            color: #323232
             p
                 margin: 0
                 @include  beyond-hidden
@@ -507,7 +536,8 @@ footer
                 font-size: 16px
                 line-height: 40px
                 padding-left: 15px
-                padding-right: 15px
+                padding-right: 15px                
+                @include  beyond-hidden
             .inv-deta-dilst-siz
                 font-size: 14px
                 line-height: 22px
@@ -526,13 +556,17 @@ footer
 /* 产品列表 */
 
 .prost-list-tab
+    overflow: hidden
+    background-color: #e1e1e1
     ul
         margin-bottom: 0
+        margin-left: 0
     li
-        padding: 0
+        padding: 0 8px
         text-align: center
         line-height: 48px
         font-size: 18px
+        position: relative
         a
             display: block
             color: $defauli-color
@@ -540,9 +574,34 @@ footer
             &:hover,&:focus
                 color: #fff
                 background-color: $defauli-color
-        &.active a,&.active a:hover
+        &.active a,&:hover a
                 color: #fff
                 background-color: $defauli-color
+            
+        &:before,&:after
+            position: absolute
+            display: block
+            top: 0
+            width: 0px
+            height: 48px
+            content: ' '
+        &:before
+            left: -7px
+            border-left: 15px solid transparent;
+            border-top: 48px solid #f1f1f1;
+            border-bottom: none
+            border-right: none
+        &:after
+            right: -7px
+            border-right: 15px solid transparent; 
+            border-bottom: 48px solid #f1f1f1;
+            border-left: none
+            border-top: none
+            z-index: 2
+        &.active:before,&:hover:before
+            border-top: 48px solid $defauli-color
+        &.active:after,&:hover:after
+            border-bottom: 48px solid $defauli-color
 
 .prost-list
     li
@@ -554,6 +613,9 @@ footer
                 margin-bottom: 0
                 span
                     margin-right: 3px
+            .prost-list-img
+                img
+                    width: 100%
             .prost-list-til
                 color: #323232
                 font-size: 16px
@@ -758,6 +820,9 @@ footer
         margin-left: 0
     li
         padding: 0 15px
+        .pro-related-img
+            img
+                width: 100%
         .pro-related-til
             line-height: 26px
             font-size: 16px
@@ -782,6 +847,9 @@ footer
             a
                 p
                     margin-bottom: 0
+                .case-typi-list-img
+                    img
+                        width: 100%
                 .case-typi-list-til
                     color: #323232
                     font-size: 16px
@@ -839,34 +907,39 @@ footer
                     clear: both
                 .case-list-img
                     float: left
-                    width: 270px
-                    height: 180px
+                    width: 100%
                     margin-bottom: 0
-                    margin-right: 30px
-                .case-list-til
-                    font-size: 16px
-                    line-height: 24px
-                    padding: 30px 0 10px
-                    color: #323232
-                    span
-                        display: inline-block
-                        width: 18px
-                        height: 18px
-                        margin: 3px 0 0 10px
-                        vertical-align: top
-                        border-radius: 2px
-                        background: #909090 url("../images/case-list-til-ico.png") no-repeat scroll center center 
-                        background-color: #909090
-                .case-list-tex
-                    line-height: 30px
-                    color: #646464
-                &:hover,&:focus
+                    margin-right: 0px
+                    img
+                        width: 100%
+                .case-list-tare
+                    float: left
+                    padding: 0 10px 10px
                     .case-list-til
-                        color: $defauli-color
+                        font-size: 16px
+                        line-height: 34px
+                        padding: 5px 0 0px
+                        color: #323232
                         span
-                            background-color: $defauli-color
-                    .case-list-tex span
-                        color: $defauli-color
+                            display: inline-block
+                            width: 18px
+                            height: 18px
+                            margin: 3px 0 0 10px
+                            vertical-align: top
+                            border-radius: 2px
+                            background: #909090 url("../images/case-list-til-ico.png") no-repeat scroll center center 
+                            background-color: #909090
+                    .case-list-tex
+                        line-height: 24px
+                        color: #646464
+                &:hover,&:focus
+                    .case-list-tare
+                        .case-list-til
+                            color: $defauli-color
+                            span
+                                background-color: $defauli-color
+                        .case-list-tex span
+                            color: $defauli-color
 
 .case-page
     text-align: center
@@ -1004,7 +1077,7 @@ footer
         border: none
         border-bottom: 3px solid $defauli-color
         .navbar-header
-            padding: 15px 0
+            padding: 15px 0 15px 15px
         .headhottel
             font-size: 16px
             line-height: 20px
@@ -1025,24 +1098,36 @@ footer
                 background-color: $defauli-color
                 color: #fff
 
-    .advice-tion
-        height: auto
-        .advice-txe
-            padding: 15px
-            line-height: 24px
-            font-size: 16px
-            p
-                margin: 0
-            .advice-ant
-                font-size: 20px
-                line-height: 32px
-                color: $defauli-color
-        .advice-btn
-            padding: 5px 25px 25px
-            width: 100%
-            a
-                width: 100px
-                margin: 0 auto
+    .prot-mor-list        
+        .img-responsive
+            margin: 0 auto
+        .promr-list
+            margin-bottom: 5px
+            padding: 10px 0 25px
+        .prot-lsmor-til
+            font-size: 18px
+            font-weight: bold
+            line-height: 30px
+            padding: 2px 0
+        .advice-tion
+            height: auto
+            margin-top: 10px
+            .advice-txe
+                padding: 15px
+                line-height: 24px
+                font-size: 16px
+                p
+                    margin: 0
+                .advice-ant
+                    font-size: 20px
+                    line-height: 32px
+                    color: $defauli-color
+            .advice-btn
+                padding: 5px 25px 15px
+                width: 100%
+                a
+                    width: 100px
+                    margin: 0 auto
 
     .protlshegt
         img
@@ -1066,13 +1151,14 @@ footer
     .advice-ico
         display: none
 
-    .foot-nav
-        padding: 15px 0
-        .foot-nav-tel
-            text-align: center
-            height: auto
-            .foot-nav-img
-                margin-bottom: 10px
+    footer 
+        .foot-nav
+            padding: 15px 0 5px
+            .foot-nav-tel
+                text-align: center
+                height: auto
+                .foot-nav-img
+                    margin-bottom: 10px
 
     .invest-marketfat 
         a
@@ -1099,32 +1185,54 @@ footer
                 background-color: #f1f1f1
             a:hover,a:focus
                 @include invest-list-hover
+                
     .inv-deta-side-lst
         li
             a
                 .inv-deta-dilst-img
                     img
                         width: 100%
-                    
+
+    .case-sect01
+        .case-sect01-btn
+            margin-top: 10px
+
+    .prost-list-tab
+        background: none
+        li
+            padding: 1px
+            font-size: 16px
+            &:before,&:after
+                border: none
+
+    .prot-sect01
+        .pro-info-cons-tel
+            margin: 15px 0
+
+    .abt-imge
+        img
+            width: 100%
+
 @media (min-width: 768px)
 
     .invesguide
         .invesguide-tex
             max-height: 138px
 
-    .advice-tion
-        .advice-txe
-            padding: 35px 0 0 20px
-            line-height: 24px
-            font-size: 16px
-            .advice-ant
-                font-size: 20px
-                line-height: 42px
-                color: $defauli-color
-        .advice-btn
-            padding: 60px 25px 0 0
-            a
-                width: 120px
+    .prot-mor-list
+        .advice-tion
+            .advice-txe
+                padding: 35px 0 0 20px
+                line-height: 24px
+                font-size: 16px
+                .advice-ant
+                    font-size: 20px
+                    line-height: 42px
+                    color: $defauli-color
+            .advice-btn
+                padding: 60px 25px 0 0
+                a
+                    width: 120px
 
     
     .invest-lstion-01
@@ -1153,19 +1261,32 @@ footer
     .abttext
         height: 210px
     
-    .advice-tion
-        .advice-txe
-            padding: 37px 0 0 50px
-            line-height: 28px
-            font-size: 18px
-            .advice-ant
-                font-size: 26px
-                line-height: 34px
-                color: $defauli-color
-        .advice-btn
-            padding: 60px 65px 0 0
-            a
-                width: 150px
+    .prot-mor-list
+        .advice-tion
+            .advice-txe
+                padding: 37px 0 0 50px
+                line-height: 28px
+                font-size: 18px
+                .advice-ant
+                    font-size: 26px
+                    line-height: 34px
+                    color: $defauli-color
+            .advice-btn
+                padding: 60px 65px 0 0
+                a
+                    width: 150px
+
+@media (min-width: 992px) and (max-width:1199px)
+    .case-typi-hot
+        .case-typi-listimg
+            li
+                a
+                    .case-typi-list-til
+                        font-size: 14px
+                        padding: 5px 0
+        .case-typi-list
+            li
+                font-size: 14px
 
 @media (min-width: 1200px)
     .container
@@ -1191,10 +1312,32 @@ footer
     .abttext
         height: 180px
 
-    .advice-tion
-        .advice-txe
-            width: auto
-        .advice-btn
-            padding: 60px 65px 0 0
-            a
-                width: 150px
+    .prot-mor-list
+        .advice-tion
+            .advice-txe
+                width: auto
+            .advice-btn
+                padding: 60px 65px 0 0
+                a
+                    width: 150px
+    
+    .case-list
+        ul
+            li
+                a
+                    .case-list-img
+                        float: left
+                        width: 270px
+                        height: 180px
+                        margin-bottom: 0
+                        margin-right: 30px
+                    .case-list-tare
+                        padding: 0 0px
+                        .case-list-til
+                            font-size: 16px
+                            line-height: 24px
+                            padding: 30px 0 10px
+                            color: #323232
+                        .case-list-tex
+                            line-height: 30px
+                            color: #646464
