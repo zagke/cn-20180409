@@ -434,13 +434,14 @@ footer
             margin: 0 30px 0 0
         .inv-mkfa-til
             font-size: 16px
+            font-weight: bold
             line-height: 46px
-            padding-top: 15px
+            padding-top: 16px
             color: $defauli-color
             @include  beyond-hidden
         .inv-mkfa-tme
             line-height: 26px
-            margin-bottom: 10px
+            margin-bottom: 14px
         .inv-mkfa-tex
             line-height: 30px
             height: 60px
@@ -476,6 +477,7 @@ footer
             .inves-ls-til
                 color: $defauli-color
                 font-size: 16px
+                font-weight: bold
                 line-height: 38px
                 margin-bottom: 12px
                 @include  beyond-hidden
@@ -510,6 +512,7 @@ footer
         margin-bottom: 0
     .inv-deta-til
         font-size: 24px
+        font-weight: bold
         line-height: 24px
         color: $defauli-color
     .inv-deta-tam
@@ -537,6 +540,7 @@ footer
 
 .inv-deta-side-til
     font-size: 18px
+    font-weight: bold
     line-height: 32px
     color: $defauli-color
     margin-bottom: 24px
@@ -553,18 +557,19 @@ footer
                 color: $defauli-color
                 font-size: 16px
                 line-height: 40px
+                padding-top: 6px
                 padding-left: 15px
-                padding-right: 15px                
+                padding-right: 15px
                 @include  beyond-hidden
             .inv-deta-dilst-siz
                 font-size: 14px
-                line-height: 22px
+                line-height: 28px
                 padding-left: 15px
                 padding-right: 15px
                 color: #646464
             .inv-deta-dilst-num
-                line-height: 22px
-                padding:  0 15px 20px 15px   
+                line-height: 24px
+                padding:  0 15px 17px 15px   
                 color: #646464
             &:hover,&:focus
                 @include invest-list-hover                
@@ -761,6 +766,7 @@ footer
             background-color: $defauli-color
             color: #fff
             width: 250px
+            font-size: 16px
             line-height: 40px
             text-align: center
             display: inline-block
@@ -774,12 +780,14 @@ footer
         height: 45px
         line-height: 45px
         font-size: 20px
+        font-weight: bold
         text-align: center
         background-color: $defauli-color
         color: #fff
         margin-bottom: 30px        
     .prot-info-com
         color: $defauli-color
+        font-weight: bold
 
 .prot-sect01
     .prot-infopt
@@ -793,6 +801,7 @@ footer
         height: 40px
         line-height: 40px
         font-size: 18px
+        font-weight: bold
         text-align: center
         background-color: $defauli-color
         color: #fff
@@ -802,7 +811,9 @@ footer
         text-align: center
         color:  $defauli-color
         font-size: 26px
-        line-height: 40px
+        font-style: italic
+        height: 40px
+        line-height: 49px
         font-weight: bold
         .prot-tel-icom
             display: inline-block
@@ -815,6 +826,7 @@ footer
 .prost-cont-til
     line-height: 20px
     font-size: 18px
+    font-weight: bold
     color: $defauli-color
     padding: 25px 0
     padding-left: 30px
@@ -857,6 +869,7 @@ footer
 .case-typi-hot
     .case-typi-til
         font-size: 24px
+        font-weight: bold
         line-height: 24px
         color: $defauli-color
     .case-typi-listimg
@@ -955,6 +968,7 @@ footer
                     .case-list-tare
                         .case-list-til
                             color: $defauli-color
+                            font-weight: bold
                             span
                                 background-color: $defauli-color
                         .case-list-tex span
@@ -974,6 +988,7 @@ footer
         margin-bottom: 0
     .case-sect01-til
         font-size: 24px
+        font-weight: bold
         line-height: 24px
         color: $defauli-color
         padding-bottom: 20px
@@ -990,6 +1005,7 @@ footer
         display: block
         color: #fff
         font-size: 18px
+        font-weight: bold
         line-height: 20px
         padding: 12px 0
         text-align: center
@@ -1032,6 +1048,7 @@ footer
         line-height: 30px
     .case-cont-til
         font-size: 20px
+        font-weight: bold
         padding: 5px 0
         color: $defauli-color
     .case-scene,.case-evaluation
@@ -1220,6 +1237,13 @@ footer
         .case-sect01-btn
             margin-top: 10px
 
+    .case-table
+        ul
+            li
+                a
+                    font-size: 16px
+                    line-height: 42px
+                    height: 42px
     .prost-list-tab
         background: none
         li
@@ -1277,6 +1301,10 @@ footer
     .abt-imge
         img
             width: 100%
+    
+    .prost-list-tab
+        li
+            font-size: 16px
 
 @media (min-width: 992px)
 
@@ -1310,6 +1338,18 @@ footer
                 padding: 60px 65px 0 0
                 a
                     width: 150px
+    .case-table
+        ul
+            li
+                a
+                    font-weight: bold
+    .prost-list-tab
+        li
+            font-weight: bold
+    .case-moer
+        .case-mres-tile
+            span
+                font-weight: bold
 
 @media (min-width: 992px) and (max-width:1199px)
     .colupadd
@@ -1382,8 +1422,8 @@ footer
                         padding: 0 0px
                         .case-list-til
                             font-size: 16px
-                            line-height: 24px
-                            padding: 30px 0 10px
+                            line-height: 20px
+                            padding: 28px 0 10px
                             color: #323232
                         .case-list-tex
                             line-height: 30px
