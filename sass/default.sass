@@ -225,6 +225,9 @@ a
                 line-height: 46px
                 margin-bottom: 10px
                 border-bottom: 1px solid #d2d2d2
+        a:hover
+            .case-scene-desc-til
+                color: $defauli-color
 
 .colupadd
     padding: 20px 0 20px
@@ -255,9 +258,14 @@ a
             padding-right: 20px
             line-height: 46px
             a
-                color: #525252
+                display: block
+                color: #525252                
             &:nth-child(2n+1)
                 background-color: #f1f1f1
+            &:hover
+                background-color: $defauli-color
+                a,.invesguide-tex,.invesguide-til
+                    color: #fff
     .abt-text
         background-color: #f1f1f1
         line-height: 30px
@@ -275,7 +283,7 @@ footer
     a
         color: #fff
         &:hover
-            color: #6dbae3
+            color: #eee
     p
         margin: 0
     .foot-nav
@@ -298,6 +306,23 @@ footer
             display: inline-block
             line-height: 24px
             margin: 0 20px
+    .footter-nav
+        background-color: #fff
+        text-align: center
+        font-size: 14px
+        line-height: 20px
+        padding: 5px 0
+        border-top: 1px solid #ececec
+        width: 100%
+        height: 50px
+        position: fixed
+        bottom: 0
+        left: 0
+        z-index: 111
+        ul
+            margin-bottom: 0
+            a
+                color: #666
 /* 关于我们 */
 .abt-lab-til
     font-size: 30px
@@ -1124,7 +1149,7 @@ footer
         .headlink
             font-size: 16px
             .navbar-nav
-                margin: 0 -15px
+                margin: 0 0px
             .navbar-nav>li>a
                 line-height: 20px
                 color: #646464
@@ -1191,14 +1216,13 @@ footer
     .advice-ico
         display: none
 
-    footer 
-        .foot-nav
-            padding: 15px 0 5px
-            .foot-nav-tel
-                text-align: center
-                height: auto
-                .foot-nav-img
-                    margin-bottom: 10px
+    .colupadd
+        padding-bottom: 0
+        .abt-text
+            height: auto
+
+    footer
+        height: 50px
 
     .invest-marketfat 
         a
@@ -1260,6 +1284,15 @@ footer
         img
             width: 100%
 
+    .case-page
+        text-align: center
+        .pagination
+            margin: 0
+        li
+            a
+                margin: 0 2px
+                padding: 3px 10px
+
 @media (min-width: 768px)
     .colupadd
         .invesguide
@@ -1295,6 +1328,11 @@ footer
                 @include invest-list-hover
 
 @media (min-width: 768px) and (max-width:991px)
+    .colupadd
+        padding-bottom: 0
+        .abt-text
+            height: auto
+
     .navbar-nav>li>a
         padding: 20px 10px 10px
     
@@ -1305,6 +1343,8 @@ footer
     .prost-list-tab
         li
             font-size: 16px
+    footer
+        height: 50px
 
 @media (min-width: 992px)
 
